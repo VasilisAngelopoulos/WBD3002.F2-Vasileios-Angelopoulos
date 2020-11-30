@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul { 
+    float: right;
+}
+
+
+ul li  {
+    display: flex;
+    float: left;
+    justify-content: flex-end;
+    margin-right: 8px;
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    color: black;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+}
+
+ul li a:visited {
+    color: black;
+}
+
+header div ul li:hover {
+    visibility: visible;
+    background-color:lightgrey;
+}
+
+.language {
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    height: 40px;
+}
+
+#logo {
+    width: 130px;
+    position: relative;
+    top: 45px;
+    float: left;
+}
+
+.mainmenu {
+    margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 75px;
+    left: 35px;
+    text-align: center;
+}
+
+.mainmenu a {
+    text-decoration: none;
+}
+
+.mainmenu a:visited {
+    color: black;
+}
+
+
+main div ul li {
+    font-size: xx-large;
+    display: flex;
+    background: white;
+    width: 130px;
+    justify-content: center;
+}
+
+main div ul li a {
+    width: 130px;
+}
+
+#zappeio {
+    width: 250px;
+}
+
+#zappeio a {
+    width: 250px;
+}
+
+#zappeio a:hover {
+    color: green;
+}
