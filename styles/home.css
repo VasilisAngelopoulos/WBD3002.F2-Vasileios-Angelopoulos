@@ -4,88 +4,186 @@
     box-sizing: border-box;
 }
 
-ul { 
-    float: right;
+
+/*=========================HEADER=======================*/
+header ul {
+    text-align: right;
+    text-align: right;
 }
 
+header ul li {
+    display: inline-block;
+}
 
-ul li  {
-    display: flex;
-    float: left;
-    justify-content: flex-end;
-    margin-right: 8px;
-    background-color: white;
-    width: 80px;
-    height: 40px;
+header ul li  {
     color: black;
-    position: relative;
     text-align: center;
     line-height: 40px;
 }
 
-ul li a:visited {
-    color: black;
+.logo {
+    position: absolute;
+    top: 45px;
+}
+.logo img {
+   width:100%;
+   max-width: 110px;
 }
 
 header div ul li:hover {
     visibility: visible;
-    background-color:lightgrey;
+}
+
+header div ul li a:hover {
+    color: grey;
 }
 
 .language {
     display: block;
     text-decoration: none;
-    width: 80px;
     height: 40px;
+    margin: 0px 19px;
 }
 
-#logo {
-    width: 130px;
-    position: relative;
-    top: 45px;
-    float: left;
+a.language.active {
+    border-bottom: 2px solid black;
+}
+
+.language.active a:hover {
+    color: grey;
+}
+
+/*==========================END HEADER===================*/
+
+/*======================MENU============================*/
+
+ul.menu-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
 }
 
 .mainmenu {
-    margin: auto;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 75px;
-    left: 35px;
-    text-align: center;
+    font-size: xx-large;
+    /*background: white;*/
+    margin-top: 0px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-top: 35px;
+    padding-bottom: 40px;
 }
 
 .mainmenu a {
     text-decoration: none;
+    margin: 0px 70px;
 }
 
-.mainmenu a:visited {
-    color: black;
+#acropolis a:hover {
+    color: rgb(0, 181, 226); /*  blue sky Color */
 }
 
-
-main div ul li {
-    font-size: xx-large;
-    display: flex;
-    background: white;
-    width: 130px;
-    justify-content: center;
-}
-
-main div ul li a {
-    width: 130px;
-}
-
-#zappeio {
-    width: 250px;
-}
-
-#zappeio a {
-    width: 250px;
+#thiseio a:hover {
+    color: orange;
 }
 
 #zappeio a:hover {
-    color: green;
+    color: rgb(48, 183, 0); /* Leaf Green Color */
+}
+
+/*==================END MENU============================*/
+
+
+
+
+a:visited {
+    color: black;
+}
+
+.mainmenu a:visited {
+    color:black;
+}
+
+/*main div ul li a {
+    width: 130px;
+}*/
+
+.second_menu {
+    text-align: center;
+    color: grey;
+}
+
+#events {
+    font-size: large;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#events a {
+    text-decoration: none;
+}
+
+#events a:hover {
+    color: grey;
+}
+
+#main_picture {
+    width: 100%;
+}
+
+.third_menu {
+    display: grid;
+    /*grid-column-gap: 10px;
+    grid-row-gap: 10px;*/
+    grid-template-columns: 1;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+}
+
+#history {
+    /*background: rgb(129, 7, 7);*/
+    font-size: large;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#history a {
+    text-decoration: none;
+}
+
+#history a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+#get_to_know {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: large;   
+}
+
+#description {
+    grid-column: 2/5;
+    grid-row: 1/1;
+    padding-top: 40px;
+}
+
+#locations {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 150px);
+    padding-top: 30px;
+}
+
+
+#acrop {
+    width: 200%;
+    height: 200%;
+}
+#acropolis_location {
+    grid-column: 2/4;
+    grid-row: 1/3;
 }
