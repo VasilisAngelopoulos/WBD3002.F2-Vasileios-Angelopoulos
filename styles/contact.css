@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+}
+
+#burger-menu {
+    width: 30px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#left_menu {
+    background-color: #2B2B2B;
+    display: none;
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 300px;
+    min-height: 500px;
+    z-index: 100;
+}
+
+#left_menu:hover {
+    display: block !important;
+    z-index: 100;
+}
+
+#burger-menu:hover + #left_menu  {
+    display: block !important;
+}
+
+#left_menu ul li {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    color: white;
+    
+}
+
+.location_left {
+    padding-left: 5px;
+}
+
+header ul {
+    text-align: right;
+    text-align: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li  {
+    color: black;
+    text-align: center;
+    line-height: 40px;
+}
+
+.logo {
+    position: absolute;
+    top: 45px;
+}
+.logo img {
+   width:100%;
+   max-width: 110px;
+}
+
+header div ul li:hover {
+    visibility: visible;
+}
+
+header div ul li a:hover {
+    color: grey;
+}
+
+.language {
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    margin: 0px 19px;
+}
+
+a.language.active {
+    border-bottom: 2px solid black;
+}
+
+.language.active a:hover {
+    color: grey;
+}
+
+/*#burger-menu {
+    padding-top: 1%;
+    width: 1%;
+} */
+
+/*==========================END HEADER===================*/
+
+/*======================MENU============================*/
+
+ul.menu-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.mainmenu {
+    font-size: xx-large;
+    /*background: white;*/
+    margin-top: 0px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    font-family: 'Cinzel', serif;
+}
+
+.mainmenu a {
+    text-decoration: none;
+    margin: 0px 70px;
+}
+
+#acropolis a:hover {
+    color: rgb(0, 181, 226); /*  blue sky Color */
+}
+
+#thiseio a:hover {
+    color: #fa9d3e;
+}
+
+#zappeio a:hover {
+    color: #42BA85; 
+}
+
+/*==================END MENU============================*/
+
+a:visited {
+    color: black;
+}
+
+.mainmenu a:visited {
+    color:black;
+}
+
+/*main div ul li a {
+    width: 130px;
+}*/
+
+.second_menu {
+    text-align: center;
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+
+#second_menu_events {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#second_menu_events a {
+    text-decoration: none;
+}
+
+#second_menu_events a:hover {
+    color: grey;
+}
+
+
+#main_picture {
+    width: 100%;
+    opacity: 100%;
+}
+
+#banner_box_title {
+    position: absolute;
+    padding-left: 2%;
+    font-size: 2em;
+    font-weight: 1000;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+#banner_box_text {
+    position: absolute;
+    padding-left: 2%;
+    font-size: 2em;
+    font-weight: 500;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+#arrow {
+    position: absolute;
+    padding-left: 2%;
+    font-size: 2em;
+    top: 62%;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.slider_item {
+    position: relative;
+    /*background-color: black;*/
+}
+
+
+
+/*================== CONTACT FORM STARTS ============================*/
+
+#contact {
+    position: fixed; /* or absolute */
+    top: 30%;
+    left: 26%;
+    font-size: 2.1875rem;
+}
+
+#contact-info {
+    position: fixed; /* or absolute */
+    top: 40%;
+    left: 26%;
+    /*font-family: 'Open Sans', sans-serif;*/
+}
+
+#Athena {
+    font-size: 1.8875rem;
+}
+
+#contact-info-2 {
+    position: fixed; /* or absolute */
+    top: 55%;
+    left: 26%;
+}
+
+.textboxsize {
+    width: 200%;
+    font-size: 1rem;
+}
+
+#message {
+    position: fixed; /* or absolute */
+    top: 30%;
+    left: 50%;
+    font-size: 2.1875rem;
+}
+
+#name {
+    position: fixed; /* or absolute */
+    top: 40%;
+    left: 50%;
+}
+
+#email {
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+}
+
+#request {
+    position: fixed; /* or absolute */
+    top: 60%;
+    left: 50%;
+}
+
+#tos {
+    position: fixed; /* or absolute */
+    top: 70%;
+    left: 50%;
+}
+
+#submit-button {
+    position: fixed; /* or absolute */
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    width: 5%;
+    top: 73%;
+    left: 50%;
+    /*padding-top: 5px;*/
+}
+
+#submit-button2 {
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+}
+
+
+/* ================== START FOOTER ================== */
+
+footer {
+    position:absolute; 
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-top: 1px solid grey;
+    bottom: 0;
+}
+
+#site_footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1);
+}
+
+
+#bottom_logo {
+   width:100%;
+   max-width: 110px;
+   padding-top: 20px;
+}
+
+footer ul {
+    grid-column: 2/3;
+    grid-row: 1;
+    list-style: none;
+    padding-top: 10px;
+}
+
+footer ul li {
+    grid-column: 2/3;
+    grid-row: 1;
+    width: 100%;
+}
+
+.site_footer_nav {
+    float: left;
+    position: relative;
+    padding-top: 10px;
+    margin: 0;
+    
+}
+
+.site_footer_nav a {
+    text-decoration: none;
+}
+
+.footer_wrap {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+/* ================== END FOOTER ================== */

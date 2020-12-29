@@ -77,6 +77,7 @@ header ul li  {
     position: absolute;
     top: 45px;
 }
+
 .logo img {
    width:100%;
    max-width: 110px;
@@ -151,8 +152,13 @@ ul.menu-ul {
 
 /*==================END MENU============================*/
 
+a:focus {
+    color: black;
+}
 
-
+a {
+    color: black;
+}
 
 a:visited {
     color: black;
@@ -189,7 +195,7 @@ a:visited {
 
 #main_picture {
     width: 100%;
-    opacity: 80%;
+    opacity: 100%;
 }
 
 #banner_box_title {
@@ -224,7 +230,10 @@ a:visited {
     color: white;
 }
 
-
+.slider_item {
+    position: relative;
+    /*background-color: black;*/
+}
 
 
 /* ================== THIRD MENU ================== */
@@ -236,7 +245,7 @@ a:visited {
     /*grid-template-rows: 300px;*/
     grid-gap: 1px;
     border-bottom: 1px solid grey;
-    margin-top: -5px;
+    margin-top: -6px;
     align-items: center;
 }
 
@@ -264,10 +273,7 @@ a.third_menu_on_click {
     left: 0;
 }
 
-.slider_item {
-    position: relative;
-    background-color: black;
-}
+
 
 #the-acropolis {
     display: block;
@@ -357,11 +363,11 @@ a.third_menu_on_click {
 /* ================== HISTORY ================== */
 
 #history {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    /*display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr; */
+    /* grid-column-gap: 0px; */
+    /* grid-row-gap: 0px; */
     font-size: 1.5rem;
     font-weight: 700;
     list-style: none;
@@ -477,7 +483,7 @@ a.third_menu_on_click {
     font-size: large;
     padding-top: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid grey;
+    /*border-bottom: 1px solid grey;*/
 }
 
 #events_showcase h1 {
@@ -509,7 +515,7 @@ a.third_menu_on_click {
     grid-template-columns: repeat(2, 1fr);
     /*grid-template-rows: repeat(4, 150px);*/
     grid-gap: 2em;
-
+   /* border-bottom: 1px solid grey;*/
     padding-bottom: 20px;
     max-width: 1430px;
     /* max-width: 100%; */
@@ -550,7 +556,7 @@ a.third_menu_on_click {
     font-size: 2em;
     color: white;
     font-weight: 500;
-    /* padding-left: .5em; */
+    padding-left: .5em; 
     /* padding-top: 15%; */
     position: absolute;
     bottom: 200px;
@@ -562,7 +568,7 @@ a.third_menu_on_click {
     font-size: 2em;
     color: white;
     font-weight: 500;
-    /* padding-left: .5em; */
+    padding-left: .5em;
     /* padding-top: 15%; */
     position: absolute;
     bottom: 160px;
@@ -614,7 +620,7 @@ a.third_menu_on_click {
     font-size: 2em;
     color: white;
     font-weight: 500;
-    /* padding-left: .5em; */
+    padding-left: .5em; 
     /* padding-top: 15%; */
     position: absolute;
     bottom: 200px;
@@ -631,7 +637,7 @@ a.third_menu_on_click {
     font-size: 2em;
     color: white;
     font-weight: 500;
-    /* padding-left: .5em; */
+    padding-left: .5em;
     /* padding-top: 15%; */
     position: absolute;
     bottom: 160px;
@@ -661,6 +667,7 @@ a.third_menu_on_click {
 .showcase_box {
     position: relative;
 }
+
 
 /* ================== END EVENT SHOWCASES ================== */
 
@@ -715,3 +722,5 @@ footer ul li {
     position: relative;
     left: 50%;
 }
+
+/* ================== END FOOTER ================== */
