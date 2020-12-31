@@ -1,3 +1,9 @@
+:root{
+    --acropoliscolor: rgb(0, 181, 226); /*  blue sky Color */
+    --thiseiocolor: #fa9d3e;
+    --zappeioncolor: #42BA85; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -38,8 +44,13 @@
     text-align: left;
     padding-left: 20px;
     padding-top: 8px;
+    color: white;  
+}
+
+#left_menu ul li a {
+    text-decoration: none;
+    list-style: none;
     color: white;
-    
 }
 
 .location_left {
@@ -125,16 +136,21 @@ ul.menu-ul {
     margin: 0px 70px;
 }
 
+#acropolis_highlight{
+    color: var(--acropoliscolor);
+    /*border-bottom: 3px solid var(--acropoliscolor);*/
+}
+
 #acropolis a:hover {
-    color: rgb(0, 181, 226); /*  blue sky Color */
+    color: var(--acropoliscolor); 
 }
 
 #thiseio a:hover {
-    color: #fa9d3e;
+    color: var(--thiseiocolor);
 }
 
 #zappeio a:hover {
-    color: #42BA85; 
+    color: var(--zappeioncolor);
 }
 
 /*==================END MENU============================*/
@@ -230,7 +246,7 @@ a:visited {
     padding-top: 10px;
     padding-bottom: 10px;
 } 
-
+/*
 #history a {
     text-decoration: none;
 } 
@@ -238,7 +254,7 @@ a:visited {
 #history a:hover {
     text-decoration: none;
     color: grey;
-} 
+} */
 
 #get_to_know {
     display: grid;
@@ -253,6 +269,8 @@ a:visited {
     padding-top: 40px;
     font-family: 'Cinzel', serif;
     padding-left: -10%;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -503,7 +521,6 @@ a:visited {
 
 #info_box_wrapper {
     grid-column: 2/3;
-    
 }
 
 #opening_time {
@@ -528,6 +545,10 @@ a:visited {
     border-top: 1px solid grey; 
 }
 
+#days_hours div {
+    font-family: 'Open Sans', sans-serif;
+}
+
 #notes {
     grid-column: 2/3;
     grid-row: 5/6;
@@ -540,6 +561,10 @@ a:visited {
     grid-row: 5/6;
     border-top: 1px solid grey;
     padding-top: 10px;
+}
+
+#notes_info div {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* ================== TIMETABLE ENDS ================== */ 
@@ -569,15 +594,24 @@ a:visited {
     grid-row: 1/3;
 }
 
+#tickets1 div {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .info_link {
     font-size: 0.55rem;
     text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #tickets2 {
     grid-column: 6/7;
     grid-row: 1/3;
     padding-left: 2em;
+}
+
+#tickets2 div {
+    font-family: 'Open Sans', sans-serif;
 }
 
 #extended {
@@ -631,6 +665,7 @@ a:visited {
 #elevator_p {
     display: flex;
     padding-left: 3em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #accessibility {
@@ -649,6 +684,7 @@ a:visited {
 #accessibility_p {
     display: flex;
     padding-left: 1em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #cloakroom {
@@ -667,6 +703,7 @@ a:visited {
 #cloakroom_p {
     display: flex;
     padding-left: 1.5em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #wc {
@@ -685,6 +722,7 @@ a:visited {
 #wc_p {
     display: flex;
     padding-left: 6.2em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #audio_guide {
@@ -704,6 +742,7 @@ a:visited {
 #audio_guide_p {
     display: flex;
     padding-left: 0.5em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #info_desk {
@@ -723,6 +762,7 @@ a:visited {
 #info_desk_p {
     display:flex;
     padding-left: 2.2em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #cafeteria {
@@ -737,6 +777,10 @@ a:visited {
     display: flex;
     width: 24px;
     height: 24px;
+}
+
+#cafeteria_p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 #baby {
@@ -756,21 +800,8 @@ a:visited {
 #baby_p {
     display:flex;
     padding-left: 3em;
+    font-family: 'Open Sans', sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ================== START FOOTER ================== */
 

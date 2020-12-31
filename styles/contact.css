@@ -1,3 +1,9 @@
+:root{
+    --acropoliscolor: rgb(0, 181, 226); /*  blue sky Color */
+    --thiseiocolor: #fa9d3e;
+    --zappeioncolor: #42BA85; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +45,12 @@
     padding-left: 20px;
     padding-top: 8px;
     color: white;
-    
+}
+
+#left_menu ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
 }
 
 .location_left {
@@ -126,15 +137,15 @@ ul.menu-ul {
 }
 
 #acropolis a:hover {
-    color: rgb(0, 181, 226); /*  blue sky Color */
+    color: var(--acropoliscolor); 
 }
 
 #thiseio a:hover {
-    color: #fa9d3e;
+    color: var(--thiseiocolor);
 }
 
 #zappeio a:hover {
-    color: #42BA85; 
+    color: var(--thiseiocolor);
 }
 
 /*==================END MENU============================*/

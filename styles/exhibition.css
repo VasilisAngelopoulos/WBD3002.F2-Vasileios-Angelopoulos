@@ -1,0 +1,540 @@
+:root{
+    --acropoliscolor: rgb(0, 181, 226); /*  blue sky Color */
+    --thiseiocolor: #fa9d3e;
+    --zappeioncolor: #42BA85; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+}
+
+/*@font-face {
+    font-family: 'Cinzel', serif;
+    src: url(../fonts/Cinzel-Regular.ttf);
+} */
+
+/*body {
+    background-color: #f2efe8;
+} */
+
+
+/*=========================HEADER=======================*/
+
+#burger-menu {
+    width: 30px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#left_menu {
+    background-color: #2B2B2B;
+    display: none;
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 300px;
+    min-height: 500px;
+    z-index: 100;
+}
+
+#left_menu:hover {
+    display: block !important;
+    z-index: 100;
+}
+
+#burger-menu:hover + #left_menu  {
+    display: block !important;
+}
+
+#left_menu ul li {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    color: white;   
+}
+
+#left_menu ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.location_left {
+    padding-left: 5px;
+}
+
+header ul {
+    text-align: right;
+    text-align: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li  {
+    color: black;
+    text-align: center;
+    line-height: 40px;
+}
+
+.logo {
+    position: absolute;
+    top: 45px;
+}
+
+.logo img {
+   width:100%;
+   max-width: 110px;
+}
+
+header div ul li:hover {
+    visibility: visible;
+}
+
+header div ul li a:hover {
+    color: grey;
+}
+
+.language {
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    margin: 0px 19px;
+}
+
+a.language.active {
+    border-bottom: 2px solid black;
+}
+
+.language.active a:hover {
+    color: grey;
+}
+
+/*#burger-menu {
+    padding-top: 1%;
+    width: 1%;
+} */
+
+/*==========================END HEADER===================*/
+
+/*======================MENU============================*/
+
+ul.menu-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.mainmenu {
+    font-size: xx-large;
+    /*background: white;*/
+    margin-top: 0px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    font-family: 'Cinzel', serif;
+}
+
+.mainmenu a {
+    text-decoration: none;
+    margin: 0px 70px;
+}
+
+#acropolis a:hover {
+    color: var(--acropoliscolor); 
+}
+
+#thiseio a:hover {
+    color: var(--thiseiocolor);
+}
+
+#zappeio a:hover {
+    color: var(--zappeioncolor);
+}
+
+/*==================END MENU============================*/
+
+a:focus {
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.mainmenu a:visited {
+    color:black;
+}
+
+/*main div ul li a {
+    width: 130px;
+}*/
+
+
+/* ========== START SECOND MENU & MAIN PHOTO ============ */
+.second_menu {
+    text-align: center;
+    color: grey;
+}
+
+#second_menu_events {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#second_menu_events a {
+    text-decoration: none;
+}
+
+#second_menu_events a:hover {
+    color: grey;
+}
+
+#main_picture {
+    width: 100%;
+    opacity: 100%;
+}
+
+#banner_box_title {
+    position: absolute;
+    padding-left: 2%;
+    font-size: 2em;
+    font-weight: 1000;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    color: black;
+}
+
+#banner_box_text {
+    position: absolute;
+    padding-left: 2%;
+    font-size: 2em;
+    font-weight: 600;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: black;
+}
+
+.slider_item {
+    position: relative;
+    /*background-color: black;*/
+}
+
+/* ========== END SECOND MENU & MAIN PHOTO ============ */
+
+
+/* ================== EVENT DETAILS STARTS ================== */
+
+.info_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    line-height: 2rem;
+}
+
+div h3 {
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    align-items: center
+}
+
+#event_details {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#event_info {
+    display:grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-items: flex-end;
+    text-align: center;
+}
+
+#event_dates {
+    display:grid;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    padding-top: 2rem;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ================== EVENT DETAILS END ================== */
+
+
+/* ================== EVENT SHOWCASES ================== */
+
+#events_showcase {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 30px);
+    font-size: large;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-top: 1px solid grey;
+    /*border-bottom: 1px solid grey;*/
+}
+
+#events_showcase h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    grid-column: 2/3;
+}
+
+#page-section {
+    grid-column: 7/8;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    width: 50%;
+    margin-left:50%;
+    /*padding-top: 5px;*/
+}
+
+#page-section2 {
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    display: block;
+}
+
+#card_showcase {
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-rows: repeat(4, 150px);*/
+    grid-gap: 2em;
+   /* border-bottom: 1px solid grey;*/
+    padding-bottom: 20px;
+    max-width: 1430px;
+    /* max-width: 100%; */
+    margin: 0 auto;
+}
+
+#event_on_click {
+    /*grid-column: 2/5; */
+    /* grid-row: 1/5; */
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#event_on_click:hover {
+    background-color: lightgreen;
+    opacity: .2;
+}
+
+#event_showcase_1 {
+    background-color: black;
+    grid-column: 2/5;
+    grid-row: 1/5;
+    width: 100%;
+}
+
+/*#event_showcase_1 a:hover {
+    background-color: #42ba85;
+}*/
+
+#event_title {
+    /* grid-column: 2/5; */
+    /* grid-row: 3/4; */
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    padding-left: .5em; 
+    /* padding-top: 15%; */
+    position: absolute;
+    bottom: 200px;
+}
+
+#event_date {
+    /* grid-column: 2/5; */
+    /* grid-row: 3/4; */
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    padding-left: .5em;
+    /* padding-top: 15%; */
+    position: absolute;
+    bottom: 160px;
+}
+
+#zappeion_title {
+    /* grid-column: 2/5; */
+    /* grid-row: 3/4; */
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    /* padding-left: .5em; */
+    /* padding-top: 15%; */
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    border-bottom: 10px solid #42BA85;
+    /* padding: 0 4px;*/
+}
+
+#zappeion_title p {
+    display: inline-block;
+    background-color: #42BA85;
+    padding: 0 4px;
+}
+
+
+#event_showcase_2 {
+    grid-column: 5/8;
+    grid-row: 1/5;
+    width: 100%;
+}
+
+#event_on_click_2 {
+    /* grid-column: 2/5; */
+    /* grid-row: 1/5; */
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#event_title_2 {
+    /* grid-column: 2/5; */
+    /* grid-row: 3/4; */
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    padding-left: .5em; 
+    /* padding-top: 15%; */
+    position: absolute;
+    bottom: 200px;
+}
+
+#event_on_click_2:hover {
+    background-color:  rgb(0, 181, 226);
+    opacity: .2;
+}
+
+#event_date_2 {
+    /* grid-column: 2/5; */
+    /* grid-row: 3/4; */
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    padding-left: .5em;
+    /* padding-top: 15%; */
+    position: absolute;
+    bottom: 160px;
+}
+
+#acropolis_title_2 {
+    /* grid-column: 2/5; */
+    /* grid-row: 3/4; */
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    /* padding-left: .5em; */
+    /* padding-top: 15%; */
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    border-bottom: 10px solid  rgb(0, 181, 226);
+    /* padding: 0 4px;*/
+}
+
+#acropolis_title_2 p {
+    display: inline-block;
+    background-color:  rgb(0, 181, 226);
+    padding: 0 4px;
+}
+
+.showcase_box {
+    position: relative;
+}
+
+
+/* ================== END EVENT SHOWCASES ================== */
+
+/* ================== START FOOTER ================== */
+
+footer {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-top: 1px solid grey;
+}
+
+#site_footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1);
+}
+
+
+#bottom_logo {
+   width:100%;
+   max-width: 110px;
+   padding-top: 20px;
+}
+
+footer ul {
+    grid-column: 2/3;
+    grid-row: 1;
+    list-style: none;
+    padding-top: 10px;
+}
+
+footer ul li {
+    grid-column: 2/3;
+    grid-row: 1;
+    width: 100%;
+}
+
+.site_footer_nav {
+    float: left;
+    position: relative;
+    padding-top: 10px;
+    margin: 0;
+    
+}
+
+.site_footer_nav a {
+    text-decoration: none;
+}
+
+.footer_wrap {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+/* ================== END FOOTER ================== */
