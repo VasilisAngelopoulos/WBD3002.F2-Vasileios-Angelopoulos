@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/home.css" rel="stylesheet" type="text/css">
+    <script src="scripts/home.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" type="image/jpg" href="images/ATHENA LOGO.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
@@ -17,9 +18,9 @@
                 <div id="left_menu">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li>&nbsp; &nbsp; <a href="acropolis.html#"> ACROPOLIS</a></li>
-                        <li>&nbsp; &nbsp;THISEIO</li>
-                        <li>&nbsp; &nbsp;ZAPPEION HALLS</li>
+                        <li><a href="acropolis.html#"> ACROPOLIS</a></li>
+                        <li>THISEIO</li>
+                        <li>ZAPPEION HALLS</li>
                         <li><a href="events.html">EVENTS</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
@@ -50,10 +51,32 @@
             
             <!-- SECTION B  -->
 
-            <main>        
+            <main> 
+                <!-- <script>
+                    'use strict';  
+
+                    let slides = []; //start 
+
+                    // list of images
+                    slides[0] = 'images/22.jpg';
+                    slides[1] = 'images/acropolis.jpg';
+                    slides[2] = 'images/greek-king.jpg';
+
+                    // main function
+
+                    let step = 0;
+                    let slider = () => {
+                        document.slide.src = slides[step];
+                        step < slides.length - 1 ? step++ : step = 0
+                        setTimeout("slider()", 1000);
+                    }
+
+                    window.onload = slider;
+                </script> -->
+                   
                 <div class="slider_item"> 
-                    <a id="banner_on_click" a href="#"> 
-                    <img id="main_picture" src="images/Acropolis.jpg">
+                    <a id="banner_on_click" a href="#">
+                    <img id="main_picture" src="images/Acropolis.jpg"> <!--img name="slide" width="400" height="200"-->
                     <div id="banner_box_title"><p>Online virtual tour of Acropolis </p></div>
                     <div id="banner_box_text"><p>#StayHome but see the 360° </br> of this ancient monument</p></div>
                     <div id="arrow"><img src="images/blue-arrow.png"></div>
@@ -61,7 +84,7 @@
                 </div>
                 
                 <div class="third_menu">
-                    <div id="the-acropolis"> <a href="acropolis.html#" class="third_menu_on_click"> </a>
+                    <div id="the-acropolis" class="third-menu-item"> <a href="acropolis.html" class="third_menu_on_click"> </a>
                         <div class="card_body_1"></div>
                         <div class="card_body_2"> 
                             <b> Acropolis</b> </a>
@@ -71,7 +94,7 @@
                         <img id="blue-arrow" src="images/blue-arrow.png">
                         </div>
                     </div>
-                    <div id="thiseio-2"><a href="#">  <a href="#" class="third_menu_on_click"> </a>
+                    <div id="thiseio-2" class="third-menu-item"><a href="#">  <a href="#" class="third_menu_on_click"> </a>
                         <div class="card_body_1"></div>
                         <div class="card_body_2"> 
                             <b> Thiseio </b> </a>
@@ -81,7 +104,7 @@
                         <img id="orange-arrow" src="images/orange-arrow.png">
                         </div>
                     </div>
-                    <div id="zappeion-hall"><a href="#"> <a href="#" class="third_menu_on_click"> </a>
+                    <div id="zappeion-hall" class="third-menu-item"><a href="#"> <a href="#" class="third_menu_on_click"> </a>
                         <div class="card_body_1"></div> </a>
                         <div class="card_body_2"> 
                             <b> Zappeion Hall</b> </a>
@@ -113,7 +136,7 @@
                     <div id="thiseio-location">
                         <img id="thiseio-img" src="images/thiseio1.jpg">
                     </div>
-                        <p id="thiseio-description">Thiseio or Thissio is the name of a traditional neighbourhood in downtown Athens, Greece, northwest of the Acropolis, 1.5 km southwest of downtown.
+                        <p id="thiseio-description">Thiseio is the name of a traditional neighbourhood in downtown Athens, Greece, northwest of the Acropolis, 1.5 km southwest of downtown.
                             Long ago, the name was derived from the Temple of Hephaestus which was mistakenly known as Thiseion in reference to Theseus, 
                             the mythical king of Athens, which gave rise to the neighbourhood being named Thiseio.
                         </p>
