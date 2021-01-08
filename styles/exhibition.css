@@ -219,7 +219,8 @@ a:visited {
     top: 40%;
     left: 0;
     width: 100%;
-    color: black;
+    color: white;
+    text-shadow: 5px 2px 3px #000000;
 }
 
 #banner_box_text {
@@ -230,7 +231,8 @@ a:visited {
     top: 50%;
     left: 0;
     width: 100%;
-    color: black;
+    color: white;
+    text-shadow: 5px 2px 3px #000000;
 }
 
 .slider_item {
