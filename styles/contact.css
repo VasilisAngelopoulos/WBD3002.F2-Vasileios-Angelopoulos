@@ -231,90 +231,136 @@ a:visited {
 
 /*================== CONTACT FORM STARTS ============================*/
 
+form#form {
+    margin-top: 8%;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(6, 95px); */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.contact-form label {
+    display: block;
+}
+
+#contact-form-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-left: 100px;
+}
+
+.contact-form-text {
+    text-align: right;
+    padding-right: 100px;
+}
+
+.contact-form-info input {
+    margin-right: auto;
+    padding: 1em;
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    border-bottom: 1px solid black;
+    width: 50%;
+    font-family: 'Open Sans', sans-serif;
+}
+
 #contact {
-    position: fixed; /* or absolute */
-    top: 30%;
-    left: 26%;
-    font-size: 2.1875rem;
+    padding-top: 10px;
 }
 
-#contact-info {
-    position: fixed; /* or absolute */
-    top: 40%;
-    left: 26%;
-    /*font-family: 'Open Sans', sans-serif;*/
+.contact-form-text textarea {
+    padding: 0.2em;
+    width: 90%;
+    height: 100%;
+    resize: none;
+    font-size: 1.2em;
+    border: 0.5px solid black;
+    border-bottom: 2px solid black;
+    background: yellow;
 }
 
-#Athena {
-    font-size: 1.8875rem;
+b#Athena {
+    width: 100%;
+    height: 160%;
+    text-align: left;
+    padding-right: 12rem;
+    margin-top: 10rem;
+    line-height: 6rem;
+    /* color: red; */
 }
 
-#contact-info-2 {
-    position: fixed; /* or absolute */
-    top: 55%;
-    left: 26%;
+p#information {
+    width: 100%;
+    height: 160%;
+    text-align: right;
+    padding-right: 6rem;
 }
 
-.textboxsize {
-    width: 200%;
-    font-size: 1rem;
+p#information-2 {
+    width: 100%;
+    height: 160%;
+    text-align: right;
+    padding-right: 8rem;
 }
 
-#message {
-    position: fixed; /* or absolute */
-    top: 30%;
-    left: 50%;
-    font-size: 2.1875rem;
+p#contact-info-2 {
+    display: inline-block;
+    padding-top: 2rem;
 }
 
-#name {
-    position: fixed; /* or absolute */
-    top: 40%;
-    left: 50%;
+#extra-info {
+    padding-top: 2rem;
 }
 
-#email {
-    position: fixed; /* or absolute */
-    top: 50%;
-    left: 50%;
+#extra-info-2 {
+    padding-left: 2rem;
 }
 
-#request {
-    position: fixed; /* or absolute */
-    top: 60%;
-    left: 50%;
+#extended  {
+    padding-right: 5rem;
 }
 
-#tos {
-    position: fixed; /* or absolute */
-    top: 70%;
-    left: 50%;
+.submit-form {
+    width: 100%;
 }
 
-#submit-button {
-    position: fixed; /* or absolute */
+.btn {
+    display: block;
+    color: var(--primary-color);
     text-decoration: none;
+    border: 1px solid var(--primary-color);
+    width: 5em;
     background-color: black;
+    color: white !important;
     text-align: center;
-    width: 5%;
-    top: 73%;
-    left: 50%;
-    /*padding-top: 5px;*/
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-#submit-button2 {
-    text-decoration: none;
-    color: white;
-    padding-top: 5px;
+
+
+.submit-form  textarea{
+    width: 50%;
+    height: 150px;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
+.form-inputs {
+    margin: 20px 0;
+}
 
 /* ================== START FOOTER ================== */
 
 footer {
-    position:absolute; 
     margin-bottom: 30px;
-    margin-top: 10px;
+    margin-top: 65px;
     border-top: 1px solid grey;
     bottom: 0;
 }
@@ -324,7 +370,6 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1);
 }
-
 
 #bottom_logo {
    width:100%;
@@ -349,8 +394,7 @@ footer ul li {
     float: left;
     position: relative;
     padding-top: 10px;
-    margin: 0;
-    
+    margin: 0;  
 }
 
 .site_footer_nav a {
@@ -364,3 +408,320 @@ footer ul li {
 }
 
 /* ================== END FOOTER ================== */
+
+
+@media screen and (max-width: 992px) { /* Mobile */
+    .logo img {
+        width:50%;
+        padding-top: 12%;
+        max-width: 110px;
+     }
+    .language {
+        font-size: small;
+    }
+    .mainmenu {
+        font-size: small;
+    }
+    #second_menu_events {
+        font-size: 1rem;
+    }
+    .slider_item {
+        font-size: 0.7rem;
+    }
+    #page-section {
+        grid-column: 7/9;
+        font-size: 1rem;
+    }
+    .info_wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 150px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    div h3 {
+        display: grid;
+        grid-column: 2/4;
+        grid-row: 1/2;
+        align-items: center;
+        font-size: 1rem;
+    }
+    #event_details{
+        display: grid;
+        grid-column: 2/5;
+        grid-row: 2/3;
+        align-items: center;
+    }
+    #event_info {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 6/7;
+        padding-bottom: 100px;
+        justify-content: left;
+    }
+    #event_dates {
+        display: grid;
+        grid-column: 2/4;
+        grid-row: 6/7;
+        padding-top: 70px;
+        justify-content: left;
+    }
+    #events_showcase h1 {
+        display: grid;
+        grid-column: 2/4;
+    }
+    #page-section {
+        display: grid;
+        grid-column: 7/9;
+    }
+    #event_title {
+        font-size: 1.5rem;
+        bottom: 100px;
+    }
+    #event_date {
+        font-size: 1.1rem;
+        bottom: 70px;
+    }
+    #zappeion_title{
+        font-size: 1rem;
+    }
+    #event_title_2 {
+        font-size: 1.5rem;
+        bottom: 100px;
+    }
+    #event_date_2 {
+        font-size: 1.1rem;
+        bottom: 70px;
+    }
+    #acropolis_title_2{
+        font-size: 1rem;
+    }
+} 
+
+@media screen and (max-width: 468px) {  /* Tablet/iPad Breakpoint 1024px */                                                                
+    #burger-menu {
+        width: 20px;
+    }
+    .logo img {
+        width:25%;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+    }   
+    .language {
+        font-size: .4rem;
+    }
+    .mainmenu {
+        font-size: .5rem;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mainmenu a {
+        text-decoration: none;
+        text-decoration: none;
+        margin: 0px 30px;
+    }
+    #second_menu_events {
+        font-size: 0.rem;
+        line-height: 1rem;
+    }
+    #banner_box_title {
+        font-size: 1rem;
+    }
+    #banner_box_text {
+        font-size: 1rem;
+        top: 60%;
+    }
+    .info_wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(11, 150px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    div h3 {
+        display: grid;
+        grid-column: 2/5;
+        grid-row: 1/2;
+        align-items: center;
+        font-size: 1rem;
+    }
+    #event_details{
+        display: grid;
+        grid-column: 2/5;
+        grid-row: 2/3;
+        align-items: center;
+    }
+    #event_info {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 10/11;
+    }
+    #event_dates {
+        display: grid;
+        grid-column: 2/5;
+        grid-row: 11/12;
+    }
+    #bottom_logo {
+        width: 50%;
+    }
+    .footer_wrap {
+        left: 25%;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 414px) {  /* Mobile */                                                                
+    #burger-menu {
+        width: 20px;
+    }
+    .logo img {
+        width:25%;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+    }   
+    .language {
+        font-size: .4rem;
+    }
+    .mainmenu {
+        font-size: .5rem;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mainmenu a {
+        text-decoration: none;
+        text-decoration: none;
+        margin: 0px 30px;
+    }
+    #second_menu_events {
+        font-size: 0.rem;
+        line-height: 1rem;
+    }
+    #banner_box_title {
+        font-size: 1rem;
+    }
+    #contact {
+        position: fixed;
+        top: 25%;
+        left: 35%;
+        font-size: 1rem;
+    }
+    #contact-info {
+        position: fixed;
+        top: 30%;
+        left: 35%;
+        font-size: 0.8rem;
+    }
+    #Athena {
+        font-size: 0.8rem;
+    }
+    #contact-info-2 {
+        position: fixed;
+        top: 45%;
+        left: 35%;
+        font-size: 0.8rem;
+    }
+    #message {
+        position: fixed;
+        top: 55%;
+        left: 35%;
+        font-size: 1rem;
+    }
+    #name {
+        position: fixed;
+        top: 60%;
+        left: 35%;
+        font-size: 1rem;
+    }
+    #email {
+        position: fixed;
+        top: 70%;
+        left: 35%;
+        font-size: 1rem;
+    }
+    #request {
+        position: fixed;
+        top: 80%;
+        left: 35%;
+        font-size: 1rem;
+    }
+    #tos {
+        position: fixed;
+        top: 90%;
+        left: 35%;
+        font-size: 1rem;
+    }
+    #submit-button {
+        position: fixed;
+        text-decoration: none;
+        background-color: black;
+        text-align: center;
+        width: 20%;
+        top: 90%;
+        left: 35%;
+    }
+    #footer {
+        top: 300%;
+    }
+    #bottom_logo {
+        width: 50%;
+    }
+    .footer_wrap {
+        left: 25%;
+        font-size: 0.6rem;
+    }
+}
+
+
+/* .submit-form #email  {
+    width: 300px;
+    background-color: #292929;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+} */
+
+#message {
+    font-family: 'Open Sans', sans-serif;
+    color: green;
+}
+
+#text {
+    display: block;
+    color: #000000;
+    font-weight: 300;
+    padding: 5px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.submit-btn {
+    background-color: black !important;
+    display: inline-block !important;
+    margin-right: auto !important;
+    padding: 5px !important;
+    border: none !important;
+    /* background: none !important; */
+    font-size: 1.2em !important;
+    border-bottom: 1px solid rgb(97, 87, 87);
+    width: unset !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#fullname-text {
+    display: block;
+    color: red;
+    font-weight: 300;
+    padding: 5px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+

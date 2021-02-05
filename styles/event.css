@@ -634,3 +634,324 @@ footer ul li {
 }
 
 /* ================== END FOOTER ================== */
+
+
+
+@media screen and (max-width: 992px) { /* Mobile */
+    .logo img {
+        width:50%;
+        padding-top: 12%;
+        max-width: 110px;
+     }
+    .language {
+        font-size: small;
+    }
+    .mainmenu {
+        font-size: small;
+    }
+    #second_menu_events {
+        font-size: 1rem;
+    }
+    .slider_item {
+        font-size: 0.7rem;
+    }
+    #arrow {
+        top: 70%;
+    }
+    #history {
+        font-size: 1rem;
+    }
+    #description{
+        font-size: 1rem;
+    }
+    #events_showcase h1 {
+        font-size: 1rem;
+        grid-column: 1/4;
+        padding-left: 8px;
+    }
+    #page-section {
+        grid-column: 7/9;
+        font-size: 1rem;
+    }
+    #event_title {
+        font-size: 1.5rem;
+        bottom: 100px;
+    }
+    #event_date {
+        font-size: 1.1rem;
+        bottom: 70px;
+    }
+    #zappeion_title{
+        font-size: 1rem;
+    }
+    #event_title_2 {
+        font-size: 1.5rem;
+        bottom: 100px;
+    }
+    #event_date_2 {
+        font-size: 1.1rem;
+        bottom: 70px;
+    }
+    #acropolis_title_2{
+        font-size: 1rem;
+    }
+    #timetable_info{
+        grid-column: 6/8;
+    }
+    #info_box {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1em repeat(5, 100px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding-top: 2em;
+    }
+    #days_hours {
+        padding-left: 8px;
+    }
+    #days{
+        line-height: 33px;
+    }
+    #notes{
+        grid-column: 5/6;
+        grid-row: 4/5;
+        padding-left: 8px;
+    }
+    #notes_info {
+        grid-column: 6/7;
+        grid-row: 4/5;
+    }
+    #info_desk_p{
+        padding-left: 5.2em;
+    }
+
+    
+} 
+
+@media screen and (max-width: 468px) {  /* Tablet/iPad Breakpoint 1024px */                                                                
+    #burger-menu {
+        width: 20px;
+    }
+    .logo img {
+        width:25%;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+    }   
+    .language {
+        font-size: .4rem;
+    }
+    .mainmenu {
+        font-size: .5rem;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mainmenu a {
+        text-decoration: none;
+        text-decoration: none;
+        margin: 0px 30px;
+    }
+    #second_menu_events {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    #events_showcase h1 {
+        font-size: 0.8rem;
+        grid-column: 1/4;
+        padding-left: 8px;
+    }
+    h1#location_title {
+        font-size: 0.6rem;
+        padding-left: 0;
+    }
+    #locations {
+        padding-left: 0;
+        padding-top: 10px;
+        font-size: 0.5rem;
+    }
+    #page-section {
+        grid-column: 6/9;
+        font-size: 0.8rem;
+        width: 50%;
+        margin-left:50%;
+        /*padding-top: 5px;*/
+    }
+    #card_showcase{
+        grid-gap: 5px;
+    }
+    #card_showcase_2{
+        grid-gap: 5px;
+    }
+    #event_title {
+        font-size: 0.4rem;
+        bottom: 40px;
+    }
+    #event_date {
+        font-size: 0.4rem;
+        bottom: 25px;
+    }
+    #zappeion_title{
+        font-size: 0.4rem;
+        bottom: 7px;
+        border-bottom: 0px;
+    }
+    #event_title_2 {
+        font-size: 0.4rem;
+        bottom: 40px;
+    }
+    #event_date_2 {
+        font-size: 0.4rem;
+        bottom: 25px;
+    }
+    #acropolis_title_2{
+        font-size: 0.4rem;
+        border-bottom: 2px solid var(--acropoliscolor);
+    }
+    #event_title_3 {
+        font-size: 0.4rem;
+        bottom: 40px;
+    }
+    #event_date_3 {
+        font-size: 0.4rem;
+        bottom: 25px;
+    }
+    #zappeion_title_3{
+        font-size: 0.4rem;
+        border-bottom: 2px solid var(--zappeioncolor);
+    }
+    #event_title_4 {
+        font-size: 0.4rem;
+        bottom: 40px;
+    }
+    #event_date_4 {
+        font-size: 0.4rem;
+        bottom: 25px;
+    }
+    #acropolis_title_4{
+        font-size: 0.4rem;
+        border-bottom: 2px solid var(--acropoliscolor);
+    }
+    #bottom_logo {
+        width: 50%;
+    }
+    .footer_wrap {
+        left: 25%;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 414px) {  /* Mobile */                                                                
+    #burger-menu {
+        width: 20px;
+    }
+    .logo img {
+        width:25%;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+    }   
+    .language {
+        font-size: .4rem;
+    }
+    .mainmenu {
+        font-size: .5rem;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mainmenu a {
+        text-decoration: none;
+        text-decoration: none;
+        margin: 0px 30px;
+    }
+    #second_menu_events {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    #events_showcase h1 {
+        font-size: 0.8rem;
+        grid-column: 1/4;
+        padding-left: 8px;
+    }
+    h1#location_title {
+        font-size: 0.6rem;
+        padding-left: 0;
+    }
+    #locations {
+        padding-left: 0;
+        padding-top: 10px;
+        font-size: 0.5rem;
+    }
+    #page-section {
+        grid-column: 6/9;
+        font-size: 0.8rem;
+        width: 50%;
+        margin-left:50%;
+        /*padding-top: 5px;*/
+    }
+    #card_showcase{
+        grid-gap: 5px;
+    }
+    #card_showcase_2{
+        grid-gap: 5px;
+    }
+    #event_title {
+        font-size: 0.4rem;
+        bottom: 40px;
+    }
+    #event_date {
+        font-size: 0.4rem;
+        bottom: 25px;
+    }
+    #zappeion_title{
+        font-size: 0.4rem;
+        bottom: 7px;
+        border-bottom: 0px;
+    }
+    #event_title_2 {
+        font-size: 0.4rem;
+        bottom: 40px;
+    }
+    #event_date_2 {
+        font-size: 0.4rem;
+        bottom: 25px;
+    }
+    #acropolis_title_2{
+        font-size: 0.4rem;
+        border-bottom: 2px solid var(--acropoliscolor);
+    }
+    #event_title_3 {
+        font-size: 0.4rem;
+        bottom: 40px;
+    }
+    #event_date_3 {
+        font-size: 0.4rem;
+        bottom: 25px;
+    }
+    #zappeion_title_3{
+        font-size: 0.4rem;
+        border-bottom: 2px solid var(--zappeioncolor);
+    }
+    #event_title_4 {
+        font-size: 0.4rem;
+        bottom: 40px;
+    }
+    #event_date_4 {
+        font-size: 0.4rem;
+        bottom: 25px;
+    }
+    #acropolis_title_4{
+        font-size: 0.4rem;
+        border-bottom: 2px solid var(--acropoliscolor);
+    }
+    #bottom_logo {
+        width: 50%;
+    }
+    .footer_wrap {
+        left: 25%;
+        font-size: 0.6rem;
+    }
+}

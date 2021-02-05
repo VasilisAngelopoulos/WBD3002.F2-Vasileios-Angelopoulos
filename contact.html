@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/contact.js" defer></script>
     <link href="styles/contact.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" type="image/jpg" href="images/ATHENA LOGO.png"/>
@@ -49,23 +50,34 @@
 
             <!-- SECTION B  -->
 
-            <div>
-            <h1 id="contact"> Contact us</h1>
-                <p id="contact-info"> <b id="Athena"> Athena </b> </br></br> Stadiou street, 206 </br> Athens, Greece</p>
-                <p id="contact-info-2"> <b> Phone:</b> +30 210 2222222  </br></br> <b> Email: </b> Athenaguide@gmail.gr </p>
-            </div>
-            <div>
-                <h1 id="message"> Send us a message</h1>
-                <div> 
-                    <label id="name"> name:  </br></br> <input class="textboxsize" type="text" required /> </br>  </label>
-                    <label id="email"> Email: </br></br><input class="textboxsize" type="email"  required/></br></label> 
-                    <label id="request"> Request: </br></br><input class="textboxsize" type="email"  required/></label> 
-                    <label id="tos"> <input  type="checkbox" name="ToS" value="ToS" required /> I accept the terms of the Privacy Policy  </label> <br/>
-                    <div id="submit-button">
-                        <a id="submit-button2" title="Submit" href="#"> Submit</a>
+            <main>
+                <div class="contact-form">
+                    <div class="contact-form-text">
+                <!--<div> <label>Fullname</label><input type="text"> </div>
+                        <div><label>Email</label><input type="email"> </div>
+                    <div><label>Your Request</label><input type="text"> </div> -->
+                        <div>
+                            <h1 id="contact"> Contact us</h1>
+                                <p id="contact-info"> <b id="Athena"> Athena </b> </br></p>
+                                <p id="information"></br> Stadiou street, 206 </br></p>
+                                <p id="information-2"> Athens, Greece</p>
+                                <p id="contact-info-2">  <span id="extended"><b id="extra-info"> Phone:</b> +30 210 2222222 </span></br></br> <b id="extra-info-2"> Email: </b> Athenaguide@gmail.gr </p>
+                            </div>
                     </div>
+                     <form class="submit-form contact-form-info" id="form" action="#" onsubmit="validation()">
+                        <div class="form-inputs"> <label>Fullname </br><input type="text" id="fullname"></label> </div>
+                        <span id="fullname-text"></span>
+                        <div class="form-inputs"><label>Email </br><input type="text" name="" id="email" required> </label></div>
+                        <span id="text"></span>
+                        <div class="form-inputs"><label>Your Request </br><input type="text" required> </label></div>
+                        <!--<input required="required" type="checkbox">
+                        <span class="input__label" style="outline: none;">I accept the terms of the </span> -->
+                        <p id='message' style='display: none'>Your request has been submitted</p>    
+                        <input type="submit" class="btn submit-btn" value="Submit" >
+                     </form> 
                 </div>
-            </div> 
+                <div id="error"></div>
+            </main>
 
 
             <!-- SECTION C  -->
@@ -96,6 +108,6 @@
                         </ul>
                     </div>
                 </div>
-            </footer>          
+            </footer>
 </body>
 </html>
