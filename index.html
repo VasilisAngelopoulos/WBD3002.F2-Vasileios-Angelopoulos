@@ -4,34 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" defer></script>
     <script src="scripts/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" type="image/jpg" href="images/ATHENA LOGO.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/temple1.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <title>Athena</title>
 </head>
 <body>
     <!-- SECTION A  -->
     <header>
-            <img id="burger-menu" src="images/menu.png">
+            <img id="burger-menu" src="images/menu.png" alt="menu">
             <div id="left_menu">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li class="border"><a href="index.html">HOME</a></li>
                     <li><a href="acropolis.html#"> &nbsp;&nbsp; ACROPOLIS</a></li>
                     <li>&nbsp;&nbsp;THISEIO</li>
-                    <li>&nbsp;&nbsp;ZAPPEION HALLS</li>
-                    <li><a href="events.html">EVENTS</a></li>
+                    <li class="border">&nbsp;&nbsp;ZAPPEION HALLS</li>
+                    <li class="border"><a href="events.html">EVENTS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <div>
+            <div> 
                 <ul>
                     <li> <a class="language" href="#"> <b>  Greek </b> </a></li>
                     <li> <a class="language active" href="#"> <b>  English </b> </a></li>
                 </ul>
             </div>
         </header>
-        <div class="logo"><a href="index.html"> <img id="logo" border="0" src="images/ATHENA-LOGO1.png" target="_blank"></a></div>
+        <!-- <div class="logo"><a href="index.html"> <img id="logo" border="0" src="images/ATHENA-LOGO1.png" target="_blank"></a></div> -->
+        <a href="index.html"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 512.003 512.003" style="enable-background:new 0 0 512.003 512.003;" xml:space="preserve">
+            <g>
+            <g>
+                <rect id="base1" x="17.011" y="407.031" width="477.971" height="37.47"/>
+            </g>
+            </g>
+            <g>
+            <g>
+                <rect id="base2" y="474.504" width="512.003" height="37.47"/>
+            </g>
+            </g>
+            <g>
+            <g>
+                <polygon id="polygon" points="256,0.029 0,74.791 0,119.954 512,119.954 512,74.791 		"/>
+            </g>
+            </g>
+            <g>
+            <g>
+                <path id="pillar1" d="M109.18,152.278l-0.645-2.322H44.933v-0.001l-0.645,2.323c-0.363,1.309-8.893,32.951-8.893,111.216
+                    s8.529,109.908,8.893,111.216l0.645,2.323h63.602l0.645-2.322c0.363-1.309,8.894-32.95,8.894-111.217
+                    C118.074,185.229,109.544,153.587,109.18,152.278z"/>
+            </g>
+            </g>
+            <g>
+            <g>
+                <path id="pillar2" d="M228.69,152.278l-0.645-2.323h-63.601v0l-0.645,2.323c-0.363,1.309-8.893,32.951-8.893,111.216
+                    s8.529,109.908,8.893,111.216l0.645,2.323h63.601l0.645-2.323c0.363-1.309,8.893-32.951,8.893-111.216
+                    S229.054,153.587,228.69,152.278z"/>
+            </g>
+            </g>
+            <g>
+            <g>
+                <path id="pillar3" d="M348.201,152.278l-0.645-2.323h-63.601v0l-0.645,2.323c-0.363,1.309-8.893,32.951-8.893,111.216
+                    s8.529,109.908,8.893,111.216l0.645,2.323h63.601l0.645-2.323c0.363-1.309,8.893-32.951,8.893-111.216
+                    S348.565,153.587,348.201,152.278z"/>
+            </g>
+            </g>
+            <g>
+            <g>
+                <path id="pillar3" d="M467.712,152.277l-0.645-2.323h-63.602v0.001l-0.645,2.322c-0.363,1.309-8.894,32.951-8.894,111.216
+                    c0,78.267,8.53,109.908,8.894,111.217l0.645,2.322h63.602l0.645-2.323c0.363-1.309,8.893-32.951,8.893-111.216
+                    S468.076,153.586,467.712,152.277z"/>
+            </g>
+            </g>
+        </svg> </a>
         <div class="mainmenu">
             <ul class="menu-ul"> 
                 <li id="acropolis"><a href="acropolis.html#"> <b> Acropolis</b> </a></li>
@@ -61,21 +109,21 @@
           <input type="radio" name="radio-btn" id="radio4">
           <!--radio buttons end-->
           <!--slide images start-->
-          <a id="banner_on_click" a href="#">
-            <img name="slide">
+          <a href="#"  id="banner_on_click">
+            <img name="slide" id="main_picture" >
              <!--img name="slide" width="400" height="200"-->
             <div id="banner_box_title"><p>Online virtual tour of Acropolis </p></div>
             <div id="banner_box_text"><p>#StayHome but see the 360° </br> of this ancient monument</p></div>
-            <div id="arrow"><img src="images/blue-arrow.png"></div>
+            <div id="arrow"><img src="images/blue-arrow.png" alt="arrow"></div>
             </a>
           <div class="slide first">
-            <img src="images/acropolis.jpg" alt="">
+            <img src="images/athenagoddess.jpg" alt="athena">
           </div>
           <div class="slide">
-            <img src="images/athenagoddess.jpg" alt="">
+            <img src="images/acropolis.jpg" alt="acropolis">
           </div>
           <div class="slide">
-            <img src="images/theater.jpg" alt="">
+            <img src="images/theater.jpg" alt="theater">
           </div>
           <!--slide images end-->
           <!--automatic navigation start-->
@@ -94,34 +142,34 @@
       </div>
       <!--image slider end-->
       <div class="third_menu">
-        <div id="the-acropolis" class="third-menu-item"> <a href="acropolis.html" class="third_menu_on_click"> </a>
+        <div id="the-acropolis" class="third-menu-item"> <a href="acropolis.html" class="third_menu_on_click"></a> </a>
             <div class="card_body_1"></div>
             <div class="card_body_2"> 
-                <b> Acropolis</b> </a>
+                <b> Acropolis</b> 
                 <div>
                     <p id="information-acropolis">  An encounter with great Western art: an everlasting wonder </p>
                 </div>
-            <img id="blue-arrow" src="images/blue-arrow.png">
+            <img id="blue-arrow" src="images/blue-arrow.png" alt="arrow">
             </div>
         </div>
         <div id="thiseio-2" class="third-menu-item"><a href="#">  <a href="#" class="third_menu_on_click"> </a>
             <div class="card_body_1"></div>
             <div class="card_body_2"> 
-                <b> Thiseio </b> </a>
+                <b> Thiseio </b> 
                 <div>
                     <p id="information-thiseio">  Where Nature,Art,Science and Alchemy meet </p>
                 </div>
-            <img id="orange-arrow" src="images/orange-arrow.png">
+            <img id="orange-arrow" src="images/orange-arrow.png" alt="arrow">
             </div>
         </div>
         <div id="zappeion-hall" class="third-menu-item"><a href="#"> <a href="#" class="third_menu_on_click"> </a>
-            <div class="card_body_1"></div> </a>
+            <div class="card_body_1"></div> 
             <div class="card_body_2"> 
-                <b> Zappeion Hall</b> </a>
+                <b> Zappeion Hall</b> 
                 <div>
                     <p id="information-zappeion"> Between public and private life: a place for ceremonies </p>
                 </div>
-            <img id="green-arrow" src="images/green-arrow.png">
+            <img id="green-arrow" src="images/green-arrow.png" alt="arrow">
             </div>
         </div>
     </div>
@@ -136,26 +184,19 @@
     </div>
     <div id="locations"> 
         <div id="acropolis-location"> 
-            <img id="acropolis-img" src="images/Acropolis2.jpg">
+            <img id="acropolis-img" src="images/Acropolis2.jpg" alt="acropolis">
         </div>
-        <p id="acropolis-description">The Acropolis of Athens is an ancient citadel located on a rocky outcrop above the city of Athens
-            and contains the remains of several ancient buildings of great architectural and historic significance, the most famous being the Parthenon.
-            Although the term acropolis is generic and there are many other acropoleis in Greece, the significance of the Acropolis of Athens is such that it is commonly known as "The Acropolis" without qualification. 
-            During ancient times it was known also more properly as Cecropia, after the legendary serpent-man, Cecrops, the supposed first Athenian king.
+        <p id="acropolis-description">
         </p>
         <div id="thiseio-location">
-            <img id="thiseio-img" src="images/thiseio1.jpg">
+            <img id="thiseio-img" src="images/thiseio1.jpg" alt="thisseio">
         </div>
-            <p id="thiseio-description">Thiseio is the name of a traditional neighbourhood in downtown Athens, Greece, northwest of the Acropolis, 1.5 km southwest of downtown.
-                Long ago, the name was derived from the Temple of Hephaestus which was mistakenly known as Thiseion in reference to Theseus, 
-                the mythical king of Athens, which gave rise to the neighbourhood being named Thiseio.
+            <p id="thiseio-description">
             </p>
         <div id="zappeion-location"> 
-            <img id="zappeion-img" src="images/zappeion.jpg">
+            <img id="zappeion-img" src="images/zappeion.jpg" alt="zappeion">
         </div>
-            <p id="zappeion-description">The National Garden (formerly the Royal Garden)is a public park of 15.5 hectares in the center of the Greek capital, Athens. 
-                It is located between the districts of Kolonaki and Pangrati, directly behind the Greek Parliament building (The Old Palace) and continues to the South to the area where the Zappeion is located, across from the Panathenaiko or Kalimarmaro Olympic Stadium of the 1896 Olympic Games. 
-                The Garden also encloses some ancient ruins, tambourines and Corinthian capitals of columns, mosaics, and other features.  
+            <p id="zappeion-description"> 
             </p>
     </div>
 
@@ -168,16 +209,16 @@
         </div>
     </div>
     <div id="card_showcase">
-        <div class="showcase_box"> 
-            <img id="event_showcase_1" src="images/Pericles.jpg">
+        <div class="showcase_box" id="box1"> 
+            <img id="event_showcase_1" src="images/Pericles.jpg" alt="pericles">
         <a id="event_on_click" a href="Exhibition.html">
         </a>
             <div id="event_title"> <p>Pericles, the golden age of Athens </p></div>
             <div id="event_date"> <p> From 03/12/2020 to 14/02/2021</p></div> 
             <div id="zappeion_title"> <p> Zappeion Halls</p></div>
         </div>
-        <div class="showcase_box"> 
-            <img id="event_showcase_2" src="images/Acropolis-lights1.png">
+        <div class="showcase_box" id="box2"> 
+            <img id="event_showcase_2" src="images/Acropolis-lights1.png" alt="acropolis lights">
         <a id="event_on_click_2" a href="#">
         </a> 
             <div id="event_title_2"> <p>Join us to celebrate the new lights! </p></div>
@@ -190,7 +231,7 @@
 
             <footer>
             <div id="site_footer"> 
-                <div id="footer_logo"><a href="#"> <img id="bottom_logo" border="0" src="images/ATHENA-LOGO1.png" target="_blank"></a></div>
+                <div id="footer_logo"><a href="#"> <img id="bottom_logo" border="0" src="images/temple.png" target="_blank" alt="logo" ></a></div>
                 <div class="footer_wrap">
                     <ul>
                     <li class="site_footer_nav"><a href="acropolis.html"><b>Acropolis </b></a></li>
@@ -213,9 +254,11 @@
                         <li class="site_footer_nav">Rules for visitors</li>
                     </ul>
                 </div>
+                <div class="footer-copywrite">
+                    Copyright <img src="images/copyright.png" alt="copyright"> 2021 Vasilis Angelopoulos. All rights Reserved
+                </div>
             </div>
         </footer>
     
 </body>
-<script src="scripts/test.js"></script>
 </html>

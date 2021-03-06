@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" defer></script>
     <script src="scripts/contact.js" defer></script>
     <link href="styles/contact.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" type="image/jpg" href="images/ATHENA LOGO.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/temple1.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <title>Contact | Athena</title>
 </head>
 <body>
             <!-- SECTION A  -->
             <header>
-                <img id="burger-menu" src="images/menu.png">
+                <img id="burger-menu" src="images/menu.png" alt="menu">
                 <div id="left_menu">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
@@ -31,10 +32,56 @@
                     </ul>
                 </div>
             </header>
-            <div class="logo"><a href="index.html"> <img id="logo" border="0" src="images/ATHENA-LOGO1.png" target="_blank"></a></div>
+            <!-- <div class="logo"><a href="index.html"> <img id="logo" border="0" src="images/ATHENA-LOGO1.png" target="_blank"></a></div> -->
+            <a href="index.html"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512.003 512.003" style="enable-background:new 0 0 512.003 512.003;" xml:space="preserve">
+                    <g>
+                    <g>
+                        <rect id="base1" x="17.011" y="407.031" width="477.971" height="37.47"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <rect id="base2" y="474.504" width="512.003" height="37.47"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <polygon id="polygon" points="256,0.029 0,74.791 0,119.954 512,119.954 512,74.791 		"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <path id="pillar1" d="M109.18,152.278l-0.645-2.322H44.933v-0.001l-0.645,2.323c-0.363,1.309-8.893,32.951-8.893,111.216
+                            s8.529,109.908,8.893,111.216l0.645,2.323h63.602l0.645-2.322c0.363-1.309,8.894-32.95,8.894-111.217
+                            C118.074,185.229,109.544,153.587,109.18,152.278z"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <path id="pillar2" d="M228.69,152.278l-0.645-2.323h-63.601v0l-0.645,2.323c-0.363,1.309-8.893,32.951-8.893,111.216
+                            s8.529,109.908,8.893,111.216l0.645,2.323h63.601l0.645-2.323c0.363-1.309,8.893-32.951,8.893-111.216
+                            S229.054,153.587,228.69,152.278z"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <path id="pillar3" d="M348.201,152.278l-0.645-2.323h-63.601v0l-0.645,2.323c-0.363,1.309-8.893,32.951-8.893,111.216
+                            s8.529,109.908,8.893,111.216l0.645,2.323h63.601l0.645-2.323c0.363-1.309,8.893-32.951,8.893-111.216
+                            S348.565,153.587,348.201,152.278z"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <path id="pillar3" d="M467.712,152.277l-0.645-2.323h-63.602v0.001l-0.645,2.322c-0.363,1.309-8.894,32.951-8.894,111.216
+                            c0,78.267,8.53,109.908,8.894,111.217l0.645,2.322h63.602l0.645-2.323c0.363-1.309,8.893-32.951,8.893-111.216
+                            S468.076,153.586,467.712,152.277z"/>
+                    </g>
+                    </g>
+                </svg> </a>
             <div class="mainmenu">
                 <ul class="menu-ul"> 
-                    <li id="acropolis"><a href="#"> <b> Acropolis</b> </a></li>
+                    <li id="acropolis"><a href="acropolis.html#"> <b> Acropolis</b> </a></li>
                     <li id="thiseio"><a href="#">  <b> Thiseio  </b> </a></li>
                     <li id="zappeio"><a href="#"><b> Zappeion Hall</b></a></li>
                 </ul>
@@ -61,15 +108,20 @@
                                 <p id="contact-info"> <b id="Athena"> Athena </b> </br></p>
                                 <p id="information"></br> Stadiou street, 206 </br></p>
                                 <p id="information-2"> Athens, Greece</p>
-                                <p id="contact-info-2">  <span id="extended"><b id="extra-info"> Phone:</b> +30 210 2222222 </span></br></br> <b id="extra-info-2"> Email: </b> Athenaguide@gmail.gr </p>
+                                <p id="contact-info-2">
+                                    <span id="extended">
+                                        <b id="extra-info"> Phone:</b> +30 210 2222222
+                                    </span></br></br> 
+                                    <b id="extra-info-2"> Email: </b> Athenaguide@gmail.gr 
+                                </p>
                             </div>
                     </div>
                      <form class="submit-form contact-form-info" id="form" action="#" onsubmit="validation()">
-                        <div class="form-inputs"> <label>Fullname </br><input type="text" id="fullname"></label> </div>
+                        <div class="form-inputs"> <label>Fullname </br><input  id="fullname" type="text" ></label> </div>
                         <span id="fullname-text"></span>
-                        <div class="form-inputs"><label>Email </br><input type="text" name="" id="email" required> </label></div>
+                        <div class="form-inputs"><label>Email </br><input id="email" type="text" name="" > </label></div>
                         <span id="text"></span>
-                        <div class="form-inputs"><label>Your Request </br><input type="text" required> </label></div>
+                        <div class="form-inputs"><label>Your Request </br><input id="req" type="text" > </label></div>
                         <!--<input required="required" type="checkbox">
                         <span class="input__label" style="outline: none;">I accept the terms of the </span> -->
                         <p id='message' style='display: none'>Your request has been submitted</p>    
@@ -84,7 +136,7 @@
 
              <footer>
                 <div id="site_footer"> 
-                    <div id="footer_logo"><a href="index.html"> <img id="bottom_logo" border="0" src="images/ATHENA-LOGO1.png" target="_blank"></a></div>
+                    <div id="footer_logo"><a href="index.html"> <img id="bottom_logo" border="0" src="images/temple1.png" target="_blank" alt="logo"></a></div>
                     <div class="footer_wrap">
                         <ul>
                             <li class="site_footer_nav"><a href="acropolis.html"><b>Acropolis </b></a></li>
@@ -108,6 +160,10 @@
                         </ul>
                     </div>
                 </div>
+                <div class="footer-copywrite">
+                    Copyright <img src="images/copyright.png" alt="logo"> 2021 Vasilis Angelopoulos. All rights Reserved
+                </div>
+            </div>
             </footer>
 </body>
 </html>

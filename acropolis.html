@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/acropolis.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" defer></script>
+    <script src="scripts/acropolis.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" type="image/jpg" href="images/ATHENA LOGO.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/temple1.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <title>Acropolis | Athena</title>
 </head>
@@ -14,7 +17,7 @@
 
         
             <header>
-                <img id="burger-menu" src="images/menu.png">
+                <img id="burger-menu" src="images/menu.png" alt="menu">
                 <div id="left_menu">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
@@ -32,7 +35,53 @@
                     </ul>
                 </div>
             </header>
-            <div class="logo"><a href="index.html"> <img id="logo" border="0" src="images/ATHENA-LOGO1.png" target="_blank"></a></div>
+            <!-- <div class="logo"><a href="index.html"> <img id="logo" border="0" src="images/ATHENA-LOGO1.png" target="_blank"></a></div> -->
+            <a href="index.html"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512.003 512.003" style="enable-background:new 0 0 512.003 512.003;" xml:space="preserve">
+                    <g>
+                    <g>
+                        <rect id="base1" x="17.011" y="407.031" width="477.971" height="37.47"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <rect id="base2" y="474.504" width="512.003" height="37.47"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <polygon id="polygon" points="256,0.029 0,74.791 0,119.954 512,119.954 512,74.791 		"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <path id="pillar1" d="M109.18,152.278l-0.645-2.322H44.933v-0.001l-0.645,2.323c-0.363,1.309-8.893,32.951-8.893,111.216
+                            s8.529,109.908,8.893,111.216l0.645,2.323h63.602l0.645-2.322c0.363-1.309,8.894-32.95,8.894-111.217
+                            C118.074,185.229,109.544,153.587,109.18,152.278z"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <path id="pillar2" d="M228.69,152.278l-0.645-2.323h-63.601v0l-0.645,2.323c-0.363,1.309-8.893,32.951-8.893,111.216
+                            s8.529,109.908,8.893,111.216l0.645,2.323h63.601l0.645-2.323c0.363-1.309,8.893-32.951,8.893-111.216
+                            S229.054,153.587,228.69,152.278z"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <path id="pillar3" d="M348.201,152.278l-0.645-2.323h-63.601v0l-0.645,2.323c-0.363,1.309-8.893,32.951-8.893,111.216
+                            s8.529,109.908,8.893,111.216l0.645,2.323h63.601l0.645-2.323c0.363-1.309,8.893-32.951,8.893-111.216
+                            S348.565,153.587,348.201,152.278z"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g>
+                        <path id="pillar3" d="M467.712,152.277l-0.645-2.323h-63.602v0.001l-0.645,2.322c-0.363,1.309-8.894,32.951-8.894,111.216
+                            c0,78.267,8.53,109.908,8.894,111.217l0.645,2.322h63.602l0.645-2.323c0.363-1.309,8.893-32.951,8.893-111.216
+                            S468.076,153.586,467.712,152.277z"/>
+                    </g>
+                    </g>
+                </svg> </a>
             <div class="mainmenu">
                 <ul class="menu-ul"> 
                     <li id="acropolis"><a href="#"> <b id="acropolis_highlight"> Acropolis</b> </a></li>
@@ -54,10 +103,10 @@
             <main>        
                 <div class="slider_item"> 
                     <a id="banner_on_click" a href="#"> 
-                    <img id="main_picture" src="images/acropolis.jpg">
-                    <div id="banner_box_title"><p>Online virtual tour of Acropolis </p></div>
-                    <div id="banner_box_text"><p>#StayHome but see the 360° </br> of this ancient monument</p></div>
-                    <div id="arrow"><img src="images/blue-arrow.png"></div>
+                    <img id="main_picture" src="images/acropolis-view.jpg" alt="acropolis picture">
+                    <div id="banner_box_title"><p>An encounter with a great monument</p></div>
+                    <!-- <div id="banner_box_text"><p>#StayHome but see the 360° </br> of this ancient monument</p></div> -->
+                    <div id="arrow"><img id="arrow-el" src="images/blue-arrow.png" alt="arrow"></div>
                     </a>
                 </div>
                 <h1 id="history">  <b>  History </b> </h1>
@@ -72,20 +121,20 @@
                 <div id="events_showcase">
                     <h1> Featured events </h1>
                     <div id="page-section">
-                        <a id="page-section2" title="All events" href="#"> All events</a>
+                        <a id="page-section2" title="All events" href="events.html"> All events</a>
                     </div>
                 </div>
                 <div id="card_showcase">
-                    <div class="showcase_box"> 
-                        <img id="event_showcase_1" src="images/Pericles-green.png">
+                    <div class="showcase_box" id="box1"> 
+                        <img id="event_showcase_1" src="images/Pericles.jpg" alt="pericles">
                     <a id="event_on_click" a href="Exhibition.html">
                     </a>
                         <div id="event_title"> <p>Pericles, the golden age of Athens </p></div>
                         <div id="event_date"> <p> From 03/12/2020 to 14/02/2021</p></div> 
                         <div id="zappeion_title"> <p> Zappeion Halls</p></div>
                     </div>
-                    <div class="showcase_box"> 
-                        <img id="event_showcase_2" src="images/Acropolis-lights1.png">
+                    <div class="showcase_box" id="box2"> 
+                        <img id="event_showcase_2" src="images/Acropolis-lights1.png" alt="acropolis lights">
                     <a id="event_on_click_2" a href="#">
                     </a> 
                         <div id="event_title_2"> <p>Join us to celebrate the new lights! </p></div>
@@ -140,7 +189,7 @@
                                 <p class="info_link"> Who is entitled for a reduced price? </p> </br> 
                                 <div id="extended">Entrance reservation  </div>
                                 <p class="info_link"> How it works? </p>
-                            </div>
+                            </div> 
                             <div id="tickets2"> 
                                 <div>€20 </div>
                                 <div> </br> €15 </div> </br></br> 
@@ -155,43 +204,43 @@
                          <!-- SECTION E  -->
                         <div id="services_box">
                             <div id="elevator">
-                                <img id="elevator_img" src="images/elevator.png">
+                                <img id="elevator_img" src="images/elevator.png" alt="elevator icon">
                                 <h4>Elevator</h4>
                                 <p id="elevator_p">On the right side of the main court.</p>
                             </div>
                             <div id="accessibility">
-                                <img id="accessibility_img" src="images/accessibility.png">
+                                <img id="accessibility_img" src="images/accessibility.png" alt="accessibility icon">
                                 <h4>Accessibility</h4>
                                 <p id="accessibility_p"> Access ramp from Acropolis road. Staff at the entrance for help. Lifts to access to the floors. </p>
                             </div>
                             <div id="cloakroom">
-                                <img id="cloakroom_img" src="images/cloakroom.png">
+                                <img id="cloakroom_img" src="images/cloakroom.png" alt="cloakroom icon">
                                 <h4>Cloakroom</h4>
                                 <p id="cloakroom_p">Free. Close to the entrance. Umbrellas, cumbersome bags and backpacks must be left.</p>
                             </div>
                             <div id="wc">
-                                <img id="wc_img" src="images/wc.png">
+                                <img id="wc_img" src="images/wc.png" alt="wc icon">
                                 <h4 id="wc_img">WC</h4>
                                 <p id="wc_p">Free.Close to the entrance and in the main courtyard</p>
                             </div>
                             <div id="audio_guide">
-                                <img id="audio_guide_img" src="images/audio-guide.png">
+                                <img id="audio_guide_img" src="images/audio-guide.png" alt="audio icon">
                                 <h4>Audioguides</h4>
                                 <p id="audio_guide_p">At the entrance. Available in Italian, English, French, Spanish, German, Russian and Japanese. 
                                     Price: 6.00 €. The delivery service is available until 4.30pm.</p>
                                 </div>
                                 <div id="info_desk">
-                                    <img id="info_desk_img" src="images/info.png">
+                                    <img id="info_desk_img" src="images/info.png" alt="info desk icon">
                                     <h4>Info desk</h4>
                                     <p id="info_desk_p">Located on the left side of the entrance.</p>
                                 </div>
                                 <div id="cafeteria">
-                                    <img id="cafeteria_img" src="images/cafeteria.png">
+                                    <img id="cafeteria_img" src="images/cafeteria.png" alt="cafeteria icon">
                                     <h4>Cafeteria</h4>&nbsp;
                                     <p id="cafeteria_p">Located next to the entrance.</p>
                                 </div>
                                 <div id="baby">
-                                    <img id="baby_img" src="images/baby.png">
+                                    <img id="baby_img" src="images/baby.png" alt="baby icon">
                                     <h4>Baby pit-stop</h4>
                                     <p id="baby_p">Dedicated room for breastfeeding, change and relax, open unitl 6pm, is near the cafeteria.</p>
                                 </div>
@@ -203,7 +252,7 @@
 
                 <footer>
                     <div id="site_footer"> 
-                        <div id="footer_logo"><a href="index.html"> <img id="bottom_logo" border="0" src="images/ATHENA-LOGO1.png" target="_blank"></a></div>
+                        <div id="footer_logo"><a href="index.html"> <img id="bottom_logo" border="0" src="images/temple.png" target="_blank" alt="logo"></a></div>
                         <div class="footer_wrap">
                             <ul>
                                 <li class="site_footer_nav"><a href="acropolis.html#"><b>Acropolis </b></a></li>
@@ -225,6 +274,9 @@
                                 <li class="site_footer_nav">Restoration Department</li>
                                 <li class="site_footer_nav">Rules for visitors</li>
                             </ul>
+                        </div>
+                        <div class="footer-copywrite">
+                            Copyright <img src="images/copyright.png" alt="copyright"> 2021 Vasilis Angelopoulos. All rights Reserved
                         </div>
                     </div>
                 </footer>
