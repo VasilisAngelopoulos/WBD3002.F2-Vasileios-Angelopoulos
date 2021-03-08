@@ -9,19 +9,22 @@ setInterval(function(){
   if(counter > 3){
     counter = 1;
   }
-}, 3000);
+}, 2000);
 
 
 /* ========== GSAP ANIMATIONS ========== */
 
 
-const timeline = gsap.timeline({defaults:{duration:1}})
+const timeline = gsap.timeline()
 timeline
   gsap.from('#acropolis', {duration: 1, opacity:0, y:'-100%', ease:'ease'})
   gsap.from('#thiseio', {duration: 1, opacity:0, y:'-100%', ease:'ease'})
   gsap.from('#zappeio', {duration: 1, opacity:0, y:'-100%', ease:'ease'})
   gsap.from('.second_menu', {duration: 1, opacity: 0})
   gsap.from('#history', {duration: 1, opacity: 0})
+  gsap.from('#banner_box_title', {duration:2, opacity: 0, x: '-100%', ease: 'ease'})
+  gsap.from('#banner_box_text', {duration:3, opacity: 0, x: '-100%', ease: 'ease'})
+  gsap.from('#arrow', {duration:3, opacity: 0, x: '-100%', ease: 'ease'})
 
 
   let tl = gsap.timeline ({

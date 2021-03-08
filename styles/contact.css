@@ -11,13 +11,130 @@
     font-family: 'Cinzel', serif;
 }
 
+/*==========================HEADER STARTS===================*/
+
+a, a:visited {
+    color: black;
+  }
+
 #burger-menu {
     width: 30px;
     position: absolute;
-    top: 8px;
+    top: -40px;
     left: 10px;
     cursor: pointer;
 }
+
+#bar1 {
+    animation-name: anim8;
+    animation-duration: 1.30s;
+}
+
+    @keyframes anim8 { 
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }   
+
+#bar2 {
+    animation-name: anim9;
+    animation-duration: 0.60s;
+}
+
+@keyframes anim9 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }  
+
+#bar3 {
+    animation-name: anim10;
+    animation-duration: 0.80s;
+}
+
+@keyframes anim10 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  } 
 
 #left_menu {
     background-color: #2B2B2B;
@@ -51,6 +168,10 @@
     text-decoration: none;
     list-style: none;
     color: white;
+}
+
+.border {
+    border-bottom: 1px solid white;
 }
 
 .location_left {
@@ -409,12 +530,16 @@ ul.menu-ul {
     color: var(--acropoliscolor); 
 }
 
-#thiseio a:hover {
+#zappeio {
+    padding-left: 4%;
+}
+
+#thiseio:hover {
     color: var(--thiseiocolor);
 }
 
-#zappeio a:hover {
-    color: var(--thiseiocolor);
+#zappeio:hover {
+    color: var(--zappeioncolor);
 }
 
 /*==================END MENU============================*/
@@ -749,38 +874,55 @@ footer img {
 /* ================== END FOOTER ================== */
 
 
-@media screen and (max-width: 992px) { /* Mobile */
-    .logo img {
-        width:50%;
-        padding-top: 12%;
-        max-width: 110px;
-     }
+@media screen and (max-width: 1360px) {  /* Tablet */                                                                
+    #burger-menu {
+        width: 20px;
+    }
+    #Capa_1 {
+        width: 100%;
+        max-width: 55px;
+        position: absolute;
+        top: 45px;
+        padding-left: 10px;
+    }
     .language {
-        font-size: small;
+        font-size: 0.8rem;
     }
     .mainmenu {
-        font-size: small;
+        font-size: 1.5rem;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mainmenu a {
+        text-decoration: none;
+        text-decoration: none;
+        margin: 0px 30px;
     }
     #second_menu_events {
+        font-size: 1.2rem;
+    }
+    #banner_box_title {
         font-size: 1rem;
     }
-    .slider_item {
-        font-size: 0.7rem;
-    }
-    #page-section {
-        grid-column: 7/9;
+    #banner_box_text {
         font-size: 1rem;
+        top: 60%;
+    }
+    #contact {
+        padding-top: 10px;
+        padding-right: 60px;
     }
     .info_wrapper {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(6, 150px);
+        grid-template-rows: repeat(11, 150px);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
     div h3 {
         display: grid;
-        grid-column: 2/4;
+        grid-column: 2/5;
         grid-row: 1/2;
         align-items: center;
         font-size: 1rem;
@@ -794,65 +936,39 @@ footer img {
     #event_info {
         display: grid;
         grid-column: 2/3;
-        grid-row: 6/7;
-        padding-bottom: 100px;
-        justify-content: left;
+        grid-row: 10/11;
     }
     #event_dates {
         display: grid;
-        grid-column: 2/4;
-        grid-row: 6/7;
-        padding-top: 70px;
-        justify-content: left;
+        grid-column: 2/5;
+        grid-row: 11/12;
     }
-    #events_showcase h1 {
-        display: grid;
-        grid-column: 2/4;
+    #bottom_logo {
+        width: 35%;
+        padding-left: 10px;
     }
-    #page-section {
-        display: grid;
-        grid-column: 7/9;
+    .footer_wrap {
+        left: 25%;
+        font-size: 1.2rem;
     }
-    #event_title {
-        font-size: 1.5rem;
-        bottom: 100px;
-    }
-    #event_date {
-        font-size: 1.1rem;
-        bottom: 70px;
-    }
-    #zappeion_title{
-        font-size: 1rem;
-    }
-    #event_title_2 {
-        font-size: 1.5rem;
-        bottom: 100px;
-    }
-    #event_date_2 {
-        font-size: 1.1rem;
-        bottom: 70px;
-    }
-    #acropolis_title_2{
-        font-size: 1rem;
-    }
-} 
+}
 
-@media screen and (max-width: 991px) {  /* Medium Tablet */                                                                
+@media screen and (max-width: 991px) {  /* Tablet */                                                                
     #burger-menu {
         width: 20px;
     }
     #Capa_1 {
         width: 100%;
-        max-width: 35px;
+        max-width: 55px;
         position: absolute;
         top: 45px;
         padding-left: 10px;
-    }  
+    }
     .language {
-        font-size: .4rem;
+        font-size: 0.8rem;
     }
     .mainmenu {
-        font-size: .5rem;
+        font-size: 1.5rem;
         max-width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -913,11 +1029,11 @@ footer img {
     }
     .footer_wrap {
         left: 25%;
-        font-size: 0.6rem;
+        font-size: 1.2rem;
     }
 }
 
-@media screen and (max-width: 414px) {  /* Mobile */                                                                
+@media screen and (max-width: 414px) {  /* Iphone XS Max */                                                                
     #burger-menu {
         width: 20px;
     }
@@ -931,8 +1047,180 @@ footer img {
     .language {
         font-size: .4rem;
     }
+    #Capa_1 {
+        width: 100%;
+        max-width: 35px;
+        position: absolute;
+        top: 44px;
+        padding-left: 10px;
+    }
     .mainmenu {
-        font-size: .5rem;
+        font-size: 1rem;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mainmenu a {
+        text-decoration: none;
+        text-decoration: none;
+        margin: 0px 30px;
+    }
+    #second_menu_events {
+        font-size: 0.rem;
+        line-height: 1rem;
+    }
+    #banner_box_title {
+        font-size: 1rem;
+    }
+    #contact {
+        font-size: 1rem;
+    }
+    #contact-info {
+        font-size: 0.8rem;
+        padding-left: 30px;
+    }
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 90px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        border-top: 1px solid grey;
+    }
+    .contact-form-text {
+        text-align: right;
+        /* padding-right: 100px; */
+    }
+    b#Athena {
+        width: 100%;
+        height: 160%;
+        /* text-align: left; */
+        /* padding-right: 12rem; */
+        /* margin-top: 10rem; */
+        line-height: 6rem;
+        font-size: 15px;
+        padding-right: 100px;
+    }
+    p#information {
+        text-align: left;
+        padding-right: 0rem;
+        padding-left: 30px;
+    }
+    p#information-2 {
+        width: 100%;
+        height: 160%;
+        text-align: right;
+        padding-right: 2rem;
+    }
+    #contact-info-2 {
+        /* position: fixed; */
+        display: grid;
+        grid-column: 2;
+        /* top: 45%; */
+        /* left: 35%; */
+        padding-left: 27px;
+        text-align: left;
+        font-size: 0.8rem;
+    }
+    input#fullname {
+        width: 100%;
+    }
+    #extra-info {
+        padding-top: 0rem;
+    }
+    #extra-info-2 {
+        padding-left: 0rem;
+    }
+    #extended {
+        padding-right: 0rem;
+    }
+    #message {
+        position: fixed;
+        top: 55%;
+        left: 35%;
+        font-size: 1rem;
+    }
+    #name {
+        position: fixed;
+        top: 60%;
+        left: 35%;
+        font-size: 1rem;
+    }
+    #email {
+        top: 70%;
+        font-size: 1rem;
+        width: 100%;
+    }
+    #req {
+        width: 100%;
+    }
+    form#form {
+        margin-top: 70%;
+        display: grid;
+        margin-left: 10%;
+        grid-column: 1/2;
+    }
+    #request {
+        position: fixed;
+        top: 80%;
+        left: 35%;
+        font-size: 1rem;
+    }
+    #tos {
+        position: fixed;
+        top: 90%;
+        left: 35%;
+        font-size: 1rem;
+    }
+    #submit-button {
+        position: fixed;
+        text-decoration: none;
+        background-color: black;
+        text-align: center;
+        width: 20%;
+        top: 90%;
+        left: 35%;
+    }
+    #footer {
+        top: 300%;
+    }
+    #bottom_logo {
+        width: 50%;
+    }
+    .footer_wrap {
+        left: 25%;
+        font-size: 0.6rem;
+    }
+    .footer-copywrite {
+        grid-area: 2 / 1 / 3 / 7;
+        font-size: 0.8em;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {  /* Samsung Galaxy S8 */                                                                
+    #burger-menu {
+        width: 20px;
+    }
+    .logo img {
+        width:25%;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+    }   
+    .language {
+        font-size: .4rem;
+    }
+    #Capa_1 {
+        width: 100%;
+        max-width: 30px;
+        position: absolute;
+        top: 45px;
+        padding-left: 5px;
+    }
+    .mainmenu {
+        font-size: 0.8rem;
         max-width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -1084,7 +1372,5 @@ footer img {
         padding-top: 10px;
     }
 }
-
-
 
 
