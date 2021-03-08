@@ -737,7 +737,7 @@ a#banner_on_click {
     border-bottom: 1px solid grey;
 }
 
-#acropolis-img {
+#building {
     width: 100%;
 }
 
@@ -1696,7 +1696,7 @@ footer img {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-/*     #acropolis-img {
+/*     #building {
         width: 100%;
     } */
     .mainmenu a {

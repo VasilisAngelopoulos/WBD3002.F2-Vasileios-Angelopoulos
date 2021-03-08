@@ -20,7 +20,7 @@ timeline
 
   let tl = gsap.timeline ({
     scrollTrigger: {
-      trigger: '.third_menu',
+      trigger: '#locations',
       start: 'top bottom'
     }
   });
