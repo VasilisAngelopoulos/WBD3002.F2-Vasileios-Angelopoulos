@@ -531,15 +531,15 @@ ul.menu-ul {
     color: var(--acropoliscolor); 
 }
 
-#zappeio {
+/* #zappeio {
     padding-left: 4%;
-}
+} */
 
 #thiseio:hover {
     color: var(--thiseiocolor);
 }
 
-#zappeio:hover {
+#zappeio a:hover {
     color: var(--zappeioncolor);
 }
 

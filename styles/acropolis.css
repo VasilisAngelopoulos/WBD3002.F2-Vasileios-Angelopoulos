@@ -269,15 +269,15 @@ ul.menu-ul {
     color: var(--acropoliscolor); 
 }
 
-#zappeio {
+/* #zappeio {
     padding-left: 4%;
-}
+} */
 
 #thiseio:hover {
     color: var(--thiseiocolor);
 }
 
-#zappeio:hover {
+#zappeio a:hover {
     color: var(--zappeioncolor);
 }
 
@@ -645,7 +645,25 @@ img#arrow {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: 1px solid grey;
 } 
+
+#get_to_know {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(8, 1fr);
+    font-size: 20px;
+}
+
+#description {
+    grid-column: 2/8;
+    grid-row: 1/1;
+    padding-top: 40px;
+    font-family: 'Cinzel', serif;
+    padding-left: -10%;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 

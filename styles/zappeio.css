@@ -1,0 +1,1865 @@
+:root{
+    --acropoliscolor: rgb(0, 181, 226); /*  blue sky Color */
+    --thiseiocolor: #fa9d3e;
+    --zappeioncolor: #42BA85; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+}
+
+
+
+/*=========================HEADER=======================*/
+a, a:visited {
+    color: black;
+  }
+
+#burger-menu {
+    width: 30px;
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#bar1 {
+    animation-name: anim8;
+    animation-duration: 1.30s;
+}
+
+    @keyframes anim8 { 
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }   
+
+#bar2 {
+    animation-name: anim9;
+    animation-duration: 0.60s;
+}
+
+@keyframes anim9 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }  
+
+#bar3 {
+    animation-name: anim10;
+    animation-duration: 0.80s;
+}
+
+@keyframes anim10 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  } 
+
+#left_menu {
+    background-color: #2B2B2B;
+    display: none;
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 300px;
+    min-height: 500px;
+    z-index: 100;
+}
+
+#left_menu:hover {
+    display: block !important;
+    z-index: 100;
+}
+
+#burger-menu:hover + #left_menu  {
+    display: block !important;
+}
+
+#left_menu ul li {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    color: white;   
+}
+
+.border {
+    border-bottom: 1px solid white;
+}
+
+#left_menu ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.location_left {
+    padding-left: 5px;
+}
+
+header ul {
+    text-align: right;
+    text-align: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li  {
+    color: black;
+    text-align: center;
+    line-height: 40px;
+}
+
+.logo {
+    position: absolute;
+    top: 45px;
+}
+
+.logo img {
+   width:100%;
+   max-width: 110px;
+}
+
+header div ul li:hover {
+    visibility: visible;
+}
+
+header div ul li a:hover {
+    color: grey;
+}
+
+.language {
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    margin: 0px 19px;
+}
+
+a.language.active {
+    border-bottom: 2px solid black;
+}
+
+.language.active a:hover {
+    color: grey;
+}
+.slider{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+    
+.slides{
+    width: 500%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+
+.navigation-manual{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    bottom: 5%;
+    z-index: 2;
+}
+
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: purple;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+/* ========================== SVG & SVG ANIMATIONS ====================*/
+
+#Capa_1 {
+    width: 100%;
+    max-width: 90px;
+    position: absolute;
+    top: 58px;
+    padding-left: 10px;
+}
+
+
+#polygon {
+    animation-name: anim1;
+    animation-duration: 1.30s;
+}
+
+    @keyframes anim1 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }  
+
+#pillar1 {
+    animation-name: anim2;
+    animation-duration: 0.60s;
+}
+
+@keyframes anim2 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }  
+
+#pillar2 {
+    animation-name: anim3;
+    animation-duration: 0.80s;
+}
+
+@keyframes anim3 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  } 
+
+#pillar3 {
+    animation-name: anim4;
+    animation-duration: 1s;
+}
+@keyframes anim4 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  } 
+
+#pillar4 {
+    animation-name: anim5;
+    animation-duration: 1.20s;
+}
+
+@keyframes anim5 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  } 
+
+  #base1 {
+    animation-name: anim6;
+    animation-duration: 0.40s;
+}
+
+@keyframes anim6 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  } 
+
+  #base2 {
+    animation-name: anim7;
+    animation-duration: 0.30s;
+}
+
+@keyframes anim7 {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+/* ========================== SVG & SVG ANIMATIONS ENDS ====================*/
+
+
+/*==========================END HEADER===================*/
+
+/*======================MENU============================*/
+#main_picture {
+    width: 100%;
+}
+
+ul.menu-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.mainmenu {
+    font-size: xx-large;
+    max-width: 100%;
+    /*background: white;*/
+    margin-top: 0px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    font-family: 'Cinzel', serif;
+}
+
+.mainmenu a {
+    text-decoration: none;
+    margin: 0px 70px;
+}
+
+#acropolis a:hover {
+    color: var(--acropoliscolor); 
+}
+
+/* #zappeio {
+    padding-left: 4%;
+} */
+
+#thiseio:hover {
+    color: var(--thiseiocolor);
+}
+
+#zappeio a:hover {
+    color: var(--zappeioncolor);
+}
+
+/*==================END MENU============================*/
+
+a:focus {
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.mainmenu a:visited {
+    color:black;
+}
+
+
+.second_menu {
+    text-align: center;
+    color: grey;
+}
+
+#second_menu_events {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#second_menu_events a {
+    text-decoration: none;
+}
+
+#second_menu_events a:hover {
+    color: grey;
+}
+
+a#banner_on_click {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#banner_box_title {
+    position: absolute;
+    padding-left: 2%;
+    font-size: 2em;
+    font-weight: 1000;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-shadow: 5px 2px 3px #000000;
+}
+
+#banner_box_text {
+    position: absolute;
+    padding-left: 2%;
+    font-size: 2em;
+    font-weight: 600;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-shadow: 5px 2px 3px #000000;
+}
+
+#arrow {
+    position: absolute;
+    padding-left: 2%;
+    font-size: 2em;
+    top: 48%;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.slider_item {
+    position: relative;
+    text-shadow: 2px 2px 3px #000000;
+    /*background-color: black;*/
+}
+
+
+
+
+
+
+/* ================== HISTORY ================== */
+
+#history {
+    font-weight: 700;
+    list-style: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+
+
+
+/* ================== END HISTORY ================== */
+
+/* ================== LOCATION DESCRIPTIONS ================== */
+
+
+#get_to_know {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(8, 1fr);
+    font-size: 20px;
+    border-top: 1px solid grey;
+}
+
+#description {
+    grid-column: 2/8;
+    grid-row: 1/1;
+    padding-top: 40px;
+    padding-left: -10%;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#locations {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 150px);
+    padding-top: 2em;
+    padding-bottom: 100px;
+    border-bottom: 1px solid grey;
+}
+
+#acropolis-img {
+    width: 100%;
+}
+
+#acropolis-location {
+    grid-column: 2/5;
+    grid-row: 1/3;
+}
+
+#acropolis-description {
+    text-align: left;
+    grid-column: 5/8;
+    grid-row: 1/4;
+    font-size: 25px;
+    padding-left: 0.99em;
+    line-height: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#thiseio-img {
+    width: 100%;
+}
+
+#thiseio-location {
+    grid-column: 5/8;
+    grid-row: 5/7;
+}
+
+#thiseio-description {
+    text-align: left;
+    grid-column: 2/5;
+    grid-row: 5/7;
+    font-size: 25px;
+    line-height: 2.5rem;
+    padding-right: 0.99em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#zappeion-img {
+    width: 100%;
+}
+
+#zappeion-location {
+    grid-column: 2/5;
+    grid-row: 8/11;
+}
+
+#zappeion-description {
+    text-align: left;
+    grid-column: 5/8;
+    grid-row: 8/11;
+    font-size: 25px;
+    line-height: 120%;
+    padding-left: 0.99em;
+    line-height: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ================== END LOCATION DESCRIPTIONS ================== */
+
+/* ================== EVENT SHOWCASES ================== */
+
+#events_showcase {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 30px);
+    font-size: large;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /*border-bottom: 1px solid grey;*/
+}
+
+#events_showcase h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    grid-column: 2/3;
+}
+
+#page-section {
+    grid-column: 7/8;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    width: 50%;
+    margin-left:50%;
+    /*padding-top: 5px;*/
+}
+
+#page-section2 {
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    display: block;
+}
+
+#card_showcase {
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    padding-bottom: 20px;
+    max-width: 1430px;
+    margin: 0 auto;
+}
+
+#event_on_click {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#event_on_click:hover {
+    background-color: lightgreen;
+    opacity: .2;
+}
+
+#event_showcase_1 {
+    background-color: black;
+    grid-column: 2/5;
+    grid-row: 1/5;
+    width: 100%;
+}
+
+#event_title {
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    padding-left: .5em; 
+    /* padding-top: 15%; */
+    position: absolute;
+    bottom: 200px;
+}
+
+#event_date {
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    padding-left: .5em;
+    position: absolute;
+    bottom: 160px;
+}
+
+#zappeion_title {
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    border-bottom: 10px solid #42BA85;
+}
+
+#zappeion_title p {
+    display: inline-block;
+    background-color: #42BA85;
+    padding: 0 4px;
+}
+
+
+#event_showcase_2 {
+    grid-column: 5/8;
+    grid-row: 1/5;
+    width: 100%;
+}
+
+#event_on_click_2 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#event_title_2 {
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    padding-left: .5em; 
+    position: absolute;
+    bottom: 200px;
+}
+
+#event_on_click_2:hover {
+    background-color:  rgb(0, 181, 226);
+    opacity: .2;
+}
+
+#event_date_2 {
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    padding-left: .5em;
+    position: absolute;
+    bottom: 160px;
+}
+
+#acropolis_title_2 {
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    border-bottom: 10px solid  rgb(0, 181, 226);
+}
+
+#acropolis_title_2 p {
+    display: inline-block;
+    background-color:  rgb(0, 181, 226);
+    padding: 0 4px;
+}
+
+.showcase_box {
+    position: relative;
+}
+
+
+/* ================== END EVENT SHOWCASES ================== */
+
+/* ================== START FOOTER ================== */
+
+footer {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-top: 1px solid grey;
+}
+
+#site_footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1);
+    grid-row-gap: 20px;
+}
+
+
+#bottom_logo {
+   width:100%;
+   max-width: 110px;
+   padding-top: 20px;
+   padding-left: 10px;
+}
+
+footer ul {
+    grid-column: 2/3;
+    grid-row: 1;
+    list-style: none;
+    padding-top: 10px;
+}
+
+footer ul li {
+    grid-column: 2/3;
+    grid-row: 1;
+    width: 100%;
+}
+
+.site_footer_nav {
+    float: left;
+    position: relative;
+    padding-top: 10px;
+    margin: 0;
+    
+}
+
+.site_footer_nav a {
+    text-decoration: none;
+}
+
+.footer_wrap {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+.footer-copywrite {
+    grid-area: 2 / 1 / 3 / 7;
+    text-align: center;
+    color: gray;
+    border-top: gray 1px solid;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+    padding-top: 10px;
+}
+
+footer img {
+    width: 15px;
+}
+
+
+/* ================== END FOOTER ================== */
+
+@media screen and (max-width: 1360px) {  /*  Laptop   */                                                                
+    #burger-menu {
+        width: 20px;
+    }
+    .logo img {
+        width:25%;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+    }   
+    .language {
+        font-size: 0.8rem;
+    }
+    #main_picture {
+        width: 100%;
+    }
+    .slide img {
+        width: 100%;
+    }
+    #Capa_1 {
+        width: 100%;
+        max-width: 55px;
+        position: absolute;
+        top: 45px;
+        padding-left: 10px;
+    }
+    .mainmenu {
+        font-size: 1.5rem;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mainmenu a {
+        text-decoration: none;
+        text-decoration: none;
+        margin: 0px 30px;
+    }
+    #second_menu_events {
+        font-size: 1.2rem;
+    }
+    .slider_item {
+        font-size: 0.4rem;
+        text-shadow: 2px 2px 3px #000000;
+    }
+    #banner_box_title {
+        font-size: 4em;
+    }
+    #arrow {
+        top: 70%;
+        width: 10%;
+    }
+    img#arrowimage {
+        width: 20%;
+    }
+    .third_menu {
+        border-bottom: 1px solid grey;
+        margin-top: -6px;
+        display: flex;
+        flex-direction: column;
+    }
+    .third-menu-item {
+        flex-basis: 33.3%;
+    }
+    #the-acropolis {
+        font-size: 3em;
+    }
+    #information-acropolis {
+        font-size: 2rem;
+    }
+    #thiseio-2 {
+        font-size: 3em;
+    }
+    #information-thiseio {
+        font-size: 2rem;
+    }
+    #zappeion-hall {
+        font-size: 3em;
+    }
+    #information-zappeion {
+        font-size: 2rem;
+    }
+    #history {
+        font-size: 2rem;
+    }
+    #description{
+        grid-column: 2/8;
+        grid-row: 1/1;
+        padding-top: 40px;
+        padding-left: -10%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
+    }
+    #locations {
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(15, 150px);
+        padding-bottom: 90px;
+    }
+    #acropolis-location{
+        grid-column: 3/7;
+        grid-row: 1/3;
+        width: 100%;
+    }
+    #acropolis-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 4/4;
+        font-size: 2rem;
+        padding-left: 0;
+        padding-top: 5rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #thiseio-location {
+        grid-column: 3/7;
+        grid-row: 7/7;
+        padding-top: 0;
+    }
+    #thiseio-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 10/10;
+        font-size: 2rem;
+        padding-top: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #zappeion-location {
+        grid-column: 3/7;
+        grid-row: 12/12;
+        padding-top: 0rem;
+        width: 100%;
+    }
+    #zappeion-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 16/16;
+        font-size: 2rem;
+        padding-top: 0rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #events_showcase h1 {
+        grid-column: 1/4;
+        padding-left: 8px;
+    }
+    #page-section {
+        grid-column: 7/8;
+        width: 130%;
+        /* margin-left: 0%; */
+        /* padding-top: 5px; */
+    }
+    #event_title {
+        font-size: 2.2rem;
+        line-height: 1em;
+        bottom: 120px;
+    }
+    #event_date {
+        font-size: 2rem;
+        bottom: 65px;
+        left: 3px;
+    }
+    #zappeion_title {
+        font-size: 2rem;
+    }
+    #event_title_2 {
+        font-size: 2.2rem;
+        line-height: 1em;
+        bottom: 120px;
+    }
+    #event_date_2 {
+        font-size: 2rem;
+        bottom: 65px;
+        left: 3px;
+    }
+    #acropolis_title_2{
+        font-size: 2.2rem;
+        padding-bottom: -10%;
+    }
+    #bottom_logo {
+        width: 35%;
+        padding-left: 10px;
+    }
+    .footer_wrap {
+        left: 25%;
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {  /*  Tablet  */                                                                
+    #burger-menu {
+        width: 20px;
+    }
+    .logo img {
+        width:25%;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+    }   
+    .language {
+        font-size: 0.8rem;
+    }
+    #main_picture {
+        width: 100%;
+    }
+    .slide img {
+        width: 100%;
+    }
+    #Capa_1 {
+        width: 100%;
+        max-width: 55px;
+        position: absolute;
+        top: 45px;
+        padding-left: 10px;
+    }
+    .mainmenu {
+        font-size: 1.5rem;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mainmenu a {
+        text-decoration: none;
+        text-decoration: none;
+        margin: 0px 30px;
+    }
+    #second_menu_events {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .slider_item {
+        font-size: 0.4rem;
+        text-shadow: 2px 2px 3px #000000;
+    }
+    #banner_box_title {
+        font-size: 4em;
+    }
+    #arrow {
+        top: 50%;
+        width: 10%;
+    }
+    img#arrowimage {
+        width: 20%;
+    }
+    .third_menu {
+        border-bottom: 1px solid grey;
+        margin-top: -6px;
+        display: flex;
+        flex-direction: column;
+    }
+    .third-menu-item {
+        flex-basis: 33.3%;
+    }
+    #information-acropolis {
+        font-size: 1rem;
+    }
+    #information-thiseio {
+        font-size: 1rem;
+    }
+    #information-zappeion {
+        font-size: 1rem;
+    }
+    #history {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    #description{
+        grid-column: 2/8;
+        grid-row: 1/1;
+        padding-top: 40px;
+        padding-left: -10%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+    }
+    #locations {
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(10, 150px);
+        padding-bottom: 90px;
+    }
+    #acropolis-location{
+        grid-column: 3/7;
+        grid-row: 1/3;
+        width: 100%;
+    }
+    #acropolis-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 3/4;
+        font-size: 1rem;
+        padding-left: 0;
+        padding-top: 8rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #thiseio-location {
+        grid-column: 3/7;
+        grid-row: 5/5;
+        padding-top: 0;
+    }
+    #thiseio-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 7/7;
+        font-size: 1rem;
+        padding-top: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #zappeion-location{
+        grid-column: 3/7;
+        grid-row: 8/9;
+        padding-top: 0rem;
+        width: 100%;
+    }
+    #zappeion-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 11/11;
+        font-size: 1rem;
+        padding-top: 0rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #events_showcase h1 {
+        grid-column: 1/4;
+        padding-left: 8px;
+    }
+    #page-section {
+        grid-column: 7/8;
+        width: 130%;
+        /* margin-left: 0%; */
+        /* padding-top: 5px; */
+    }
+    #event_title {
+        font-size: 1.2rem;
+        bottom: 60px;
+    }
+    #event_date {
+        font-size: 1rem;
+        bottom: 45px;
+        left: 3px;
+    }
+    #zappeion_title{
+        font-size: 1rem;
+    }
+    #event_title_2 {
+        font-size: 1.2rem;
+        bottom: 60px;
+    }
+    #event_date_2 {
+        font-size: 1rem;
+        bottom: 45px;
+        left: 3px;
+    }
+    #acropolis_title_2{
+        font-size: 1rem;
+        padding-bottom: -10%;
+    }
+    #bottom_logo {
+        width: 35%;
+        padding-left: 10px;
+    }
+    .footer_wrap {
+        left: 25%;
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 414px) {  /* Iphone XS Max */                                                                
+    #burger-menu {
+        width: 20px;
+    }
+    .logo img {
+        width:25%;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+    }   
+    .language {
+        font-size: .4rem;
+    }
+    #Capa_1 {
+        width: 100%;
+        max-width: 35px;
+        position: absolute;
+        top: 44px;
+        padding-left: 10px;
+    }
+    .mainmenu {
+        font-size: 1rem;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mainmenu a {
+        text-decoration: none;
+        text-decoration: none;
+        margin: 0px 30px;
+    }
+    #second_menu_events {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .slider_item {
+        font-size: 0.4rem;
+        text-shadow: 2px 2px 3px #000000;
+    }
+    #arrow {
+        top: 65%;
+        width: 20%;
+    }
+    img {
+        width: 100%;
+    }
+    #blue-arrow {
+        padding-right: 12%;
+        padding-top: .5em;
+        width: 50%;
+    }
+
+    #orange-arrow {
+        padding-right: 12%;
+        padding-top: .5em;
+        width: 50%;
+    }
+    #green-arrow {
+        padding-right: 12%;
+        padding-top: .5em;
+        width: 50%;
+        }
+    .third_menu {
+        border-bottom: 1px solid grey;
+        margin-top: -6px;
+        display: flex;
+        flex-direction: column;
+    }
+    .third-menu-item {
+        flex-basis: 33.3%;
+    }
+    #information-acropolis {
+        font-size: 1rem;
+    }
+    #information-thiseio {
+        font-size: 1rem;
+    }
+    #information-zappeion {
+        font-size: 1rem;
+    }
+    #history {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    #description {
+        font-size: 1rem;
+        line-height: 1em;
+    }
+    #locations{
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8, 150px);
+    }
+    #acropolis-location{
+        grid-column: 3/7;
+        grid-row: 1/3;
+        width: 100%;
+    }
+    #banner_box_title {
+        position: absolute;
+        padding-left: 2%;
+        font-size: 2em;
+        font-weight: 1000;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        color: white;
+    }
+    #banner_box_text {
+        position: absolute;
+        padding-left: 2%;
+        font-size: 0.9em;
+        font-weight: 600;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        color: white;
+    }
+    #acropolis-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 3/3;
+        font-size: 1rem;
+        padding-left: 0;
+        padding-top: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #acropolis-location {
+        grid-column: 1/9;
+        grid-row: 1/3;
+        width: 100%;
+    }
+    #thiseio-location {
+        grid-column: 1/9;
+        grid-row: 5/6;
+        padding-top: 2em;
+    }
+    #thiseio-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 7/7;
+        font-size: 1rem;
+        padding-top: 2em;
+        padding-left: 0;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #zappeion-location{
+        grid-column: 1/9;
+        grid-row: 9/10;
+        padding-top: 0rem;
+        width: 100%;
+    }
+    #zappeion-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 10/10;
+        font-size: 1rem;
+        padding-top: 2rem;
+        padding-left: 0;
+        line-height: 1rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+    #events_showcase h1 {
+        font-size: 0.8rem;
+        grid-column: 1/4;
+        padding-left: 8px;
+    }
+    #page-section {
+        grid-column: 6/9;
+        font-size: 0.8rem;
+        width: 50%;
+        margin-left: 45%;
+        /*padding-top: 5px;*/
+    }
+    #event_title {
+        font-size: 0.8rem;
+        bottom: 60px;
+    }
+    #event_date {
+        font-size: 0.6rem;
+        bottom: 45px;
+    }
+    #zappeion_title{
+        font-size: 0.7rem;
+    }
+    #event_title_2 {
+        font-size: 0.8rem;
+        bottom: 60px;
+    }
+    #event_date_2 {
+        font-size: 0.6rem;
+        bottom: 45px;
+    }
+    #acropolis_title_2{
+        font-size: 0.7rem;
+        padding-bottom: -10%;
+    }
+    #bottom_logo {
+        width: 50%;
+    }
+    .footer_wrap {
+        left: 25%;
+        font-size: 0.6rem;
+    }
+    .footer-copywrite {
+        grid-area: 2 / 1 / 3 / 7;
+        font-size: 0.8em;
+        padding-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {  /* Samsung Galaxy S8  */                                                                
+    #burger-menu {
+        width: 20px;
+    }
+    .icons{
+        display: flex;
+        width: 100%;
+        justify-content:space-evenly; 
+    }
+    .logo img {
+        width:25%;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+    }   
+    .language {
+        font-size: .4rem;
+    }
+    #main_picture {
+        width: 100%;
+    }
+    .slide img {
+        width: 100%;
+    }
+    #Capa_1 {
+        width: 100%;
+        max-width: 30px;
+        position: absolute;
+        top: 45px;
+        padding-left: 5px;
+    }
+    #banner_box_title {
+        position: absolute;
+        padding-left: 2%;
+        font-size: 0.9rem;
+        font-weight: 1000;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        color: white;
+    }
+    #banner_box_text {
+        position: absolute;
+        padding-left: 2%;
+        font-size: 0.6em;
+        font-weight: 600;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        color: white;
+    }
+    .navigation-manual {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        bottom: 5%;
+        z-index: 2;
+    }
+    .navigation-manual {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        bottom: 10%;
+        z-index: 2;
+    }
+    .manual-btn:not(:last-child) {
+        margin-right: 40px;
+    }
+    .mainmenu {
+        font-size: 0.8rem;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+/*     #acropolis-img {
+        width: 100%;
+    } */
+    .mainmenu a {
+        text-decoration: none;
+        text-decoration: none;
+        margin: 0px 30px;
+    }
+    #second_menu_events {
+        font-size: 0.7rem;
+        line-height: 0rem;
+        /* padding-bottom: 10px;*/
+    }
+    .second_menu {
+        text-align: center;
+        color: grey;
+        padding-bottom: 5px;
+    }
+    .slider_item {
+        font-size: 0.4rem;
+        text-shadow: 2px 2px 3px #000000;
+    }
+    #arrow {
+        top: 60%;
+        width: 6%;
+    }
+    img#arrowimage {
+        width: 80%;
+    }
+    .third_menu {
+        border-bottom: 1px solid grey;
+        margin-top: -6px;
+        display: flex;
+        flex-direction: column;
+    }
+    .third-menu-item {
+        flex-basis: 33.3%;
+    }
+    #information-acropolis {
+        font-size: 1rem;
+    }
+    #information-thiseio {
+        font-size: 1rem;
+    }
+    #information-zappeion {
+        font-size: 1rem;
+    }
+    #history {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    #description {
+        grid-column: 2/8;
+        grid-row: 1/1;
+        padding-top: 40px;
+        padding-left: -10%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        /* line-height: 1em; */
+    }
+    #locations {
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8, 150px);
+        padding-bottom: 50px;
+    }
+    #acropolis-location {
+        grid-column: 1/9;
+        grid-row: 1;
+        width: 100%;
+    }
+    #acropolis-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 3/4;
+        font-size: 1rem;
+        padding-left: 0;
+        padding-top: 0rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #thiseio-location {
+        grid-column: 1/9;
+        grid-row: 5/7;
+        padding-top: 3rem;
+        width: 100%;
+    }
+    #thiseio-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 7;
+        font-size: 1rem;
+        padding-top: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #zappeion-location{
+        grid-column: 1/9;
+        grid-row: 9/9;
+        padding-top: 1rem;
+        width: 100%;
+    }
+    #zappeion-description {
+        text-align: left;
+        grid-column: 2/8;
+        grid-row: 10/10;
+        font-size: 1rem;
+        padding-top: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1em;
+    }
+    #events_showcase h1 {
+        grid-column: 1/4;
+        padding-left: 8px;
+        font-size: 0.8rem;
+    }
+    #page-section {
+        grid-column: 6/8;
+        width: 100%;
+        /* margin-left: 0%; */
+        /* padding-top: 5px; */
+    }
+    #page-section2 {
+        text-decoration: none;
+        color: white;
+        padding-top: 5px;
+        display: block;
+        font-size: 0.8rem;
+    }
+    #event_title {
+        font-size: 0.5rem;
+        bottom: 60px;
+    }
+    #event_date {
+        font-size: 0.5rem;
+        bottom: 45px;
+        left: 0;
+    }
+    #zappeion_title{
+        font-size: 10px;
+    }
+    #event_title_2 {
+        font-size: 0.5rem;
+        bottom: 60px;
+    }
+    #event_date_2 {
+        font-size: 0.5rem;
+        bottom: 45px;
+        left: 0;
+    }
+    #acropolis_title_2{
+        font-size: 10px;
+        padding-bottom: -10%;
+    }
+    #bottom_logo {
+        width: 43%;
+        padding-left: 5px;
+    }
+    .footer_wrap {
+        left: 25%;
+        font-size: 0.6rem;
+    }
+    
+}  
+
+
+
+  
